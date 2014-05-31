@@ -8,7 +8,7 @@ public class RayLockActivate : MonoBehaviour {
         Vector3 fwd = transform.TransformDirection(Vector3.forward);
         if (!Physics.Raycast(transform.position, fwd, 10)){
 			obj.SetActive(true);
-			this.GetComponent<MouseLook>().enabled = false;
+			//this.GetComponent<MouseLook>().enabled = false;
 		}
     }
 }
