@@ -8,8 +8,8 @@ public class PlayerController : MonoBehaviour {
 	
 	public float maxSpeed = 20f;
 	public float speed = 0f;
-	public float acceleration = 0.55f;
-	public float deceleration = 0.040f;
+	public float acceleration = 0.4f;
+	public float deceleration = 0.03f;
 	//public float decelerationScalar = 1f;
 	
 	enum Looking : byte {Up = 0, Down, Left, Right, UpLeft, UpRight, DownLeft, DownRight}
@@ -38,11 +38,16 @@ public class PlayerController : MonoBehaviour {
 	/// </summary>
 	void Move(){
 		Debug.Log ("Speed: " + speed);
-			
+		
+		if ( speed > 0)
+			speed -= deceleration;
+		else
+			speed = 0;
+				
 		if (Input.GetKeyDown("a")){
 		
 			// if succesfully alternating, speed up
-			if ( lastKey == 'd'){
+			if ( lastKey == 'd' && speed <= maxSpeed){
 				speed += acceleration;
 			}
 			lastKey = 'a';
@@ -50,18 +55,12 @@ public class PlayerController : MonoBehaviour {
 		else if (Input.GetKeyDown ("d")){
 			
 			// if succesfully alternating, speed up
-			if (lastKey == 'a'){
+			if (lastKey == 'a' && speed <= maxSpeed){
 				speed += acceleration;
 			}
 			
 			lastKey = 'd';
-		}else{
-			if ( speed > 0 )
-				speed -= deceleration;
-			else
-				speed = 0;
 		}
-		
 	
 	}
 	
@@ -78,7 +77,6 @@ public class PlayerController : MonoBehaviour {
 		switch(lookingState){
 		case Looking.Up:
 			if (lookingState != previousLookingState){
-				transform.rotation = originalRotation;
 				ResetState();	
 			}
 			rigidbody2D.velocity = new Vector2(0, speed);
@@ -86,70 +84,62 @@ public class PlayerController : MonoBehaviour {
 			break;
 		case Looking.Down:
 			if (lookingState != previousLookingState){
-				transform.rotation = originalRotation;
-				transform.Rotate(Vector3.forward*-180);
 				ResetState();
+				transform.Rotate(Vector3.forward*-180);
 			}
 			rigidbody2D.velocity = new Vector2(0, -speed);
 			previousLookingState = lookingState;
 			break;
 		case Looking.Left:
 			if (lookingState != previousLookingState){
-				transform.rotation = originalRotation;
-				transform.Rotate(Vector3.forward*90);
-				
 				ResetState();
+				transform.Rotate(Vector3.forward*90);		
 			}
 			rigidbody2D.velocity = new Vector2(-speed, 0);
 			previousLookingState = lookingState;
 			break;
 		case Looking.Right:
 			if (lookingState != previousLookingState){
-				transform.rotation = originalRotation;
-				transform.Rotate(Vector3.forward*-90);
 				ResetState();
+				transform.Rotate(Vector3.forward*-90);
 			}
 			rigidbody2D.velocity = new Vector2(speed, 0);
 			previousLookingState = lookingState;
 			break;
 		case Looking.UpLeft:
 			if (lookingState != previousLookingState){
-				transform.rotation = originalRotation;
-				transform.Rotate(Vector3.forward*45);
 				ResetState();
+				transform.Rotate(Vector3.forward*45);
 			}
 			rigidbody2D.velocity = new Vector2(-speed, speed);
 			previousLookingState = lookingState;
 			break;
 		case Looking.UpRight:
 			if (lookingState != previousLookingState){
-				transform.rotation = originalRotation;
-				transform.Rotate(Vector3.forward*-45);
 				ResetState();
+				transform.Rotate(Vector3.forward*-45);
 			}
 			rigidbody2D.velocity = new Vector2(speed, speed);		
 			previousLookingState = lookingState;
 			break;
 		case Looking.DownLeft:
 			if (lookingState != previousLookingState){
-				transform.rotation = originalRotation;
-				transform.Rotate(Vector3.forward*-225);
 				ResetState();
+				transform.Rotate(Vector3.forward*-225);
 			}
 			rigidbody2D.velocity = new Vector2(-speed, -speed);
 			previousLookingState = lookingState;
 			break;
 		case Looking.DownRight:
 			if (lookingState != previousLookingState){
-				transform.rotation = originalRotation;
-				transform.Rotate(Vector3.forward*-135);
 				ResetState();
+				transform.Rotate(Vector3.forward*-135);
 			}
 			rigidbody2D.velocity = new Vector2(speed, -speed);
 			previousLookingState = lookingState;
 			break;
 		default :
-			lookingState = Looking.Up;
+			//lookingState = Looking.Up;
 			break;
 		}
 	}
@@ -158,6 +148,7 @@ public class PlayerController : MonoBehaviour {
 	/// Resets the state to false.
 	/// </summary>
 	void ResetState(){
+		transform.rotation = originalRotation;
 		rigidbody2D.velocity = new Vector2(0, 0);
 	}
 	
