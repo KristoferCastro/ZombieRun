@@ -9,7 +9,7 @@ public class PlayerController : MonoBehaviour {
 	public float maxSpeed = 20f;
 	public float speed = 0f;
 	public float acceleration = 0.4f;
-	public float deceleration = 0.03f;
+	public float deceleration = 0.05f;
 	//public float decelerationScalar = 1f;
 	
 	enum Looking : byte {Up = 0, Down, Left, Right, UpLeft, UpRight, DownLeft, DownRight}
