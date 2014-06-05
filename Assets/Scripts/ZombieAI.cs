@@ -15,7 +15,7 @@ using System.Collections;
 public class ZombieAI : MonoBehaviour {
 
 	public float speed = 0.5f;
-	public float acceleration;
+	public float acceleration = 0.0005f;
 	
 	
 	
@@ -26,7 +26,8 @@ public class ZombieAI : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-	
+		speed += acceleration;
+		rigidbody2D.velocity = new Vector2(0, speed);
 	
 	}
 }

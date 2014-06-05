@@ -8,8 +8,8 @@ public class PlayerController : MonoBehaviour {
 	
 	public float maxSpeed = 20f;
 	public float speed = 0f;
-	public float acceleration = 0.4f;
-	public float deceleration = 0.05f;
+	public float acceleration = 0.35f;
+	public float deceleration = 3.5f;
 	//public float decelerationScalar = 1f;
 	
 	enum Looking : byte {Up = 0, Down, Left, Right, UpLeft, UpRight, DownLeft, DownRight}
@@ -24,13 +24,17 @@ public class PlayerController : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
 		originalRotation = 	transform.rotation;
+		lastKey = 'a';
 	}
 	
 	// Update is called once per frame
 	void Update () {
 		MapInputToState();
-		Move();
+		Move();	
 		Point();
+	}
+	
+	void FixedUpdate(){
 	}
 	
 	/// <summary>
@@ -38,30 +42,27 @@ public class PlayerController : MonoBehaviour {
 	/// </summary>
 	void Move(){
 		Debug.Log ("Speed: " + speed);
-		
-		if ( speed > 0)
-			speed -= deceleration;
-		else
-			speed = 0;
 				
 		if (Input.GetKeyDown("a")){
-		
 			// if succesfully alternating, speed up
 			if ( lastKey == 'd' && speed <= maxSpeed){
 				speed += acceleration;
 			}
 			lastKey = 'a';
-		}
-		else if (Input.GetKeyDown ("d")){
 			
-			// if succesfully alternating, speed up
-			if (lastKey == 'a' && speed <= maxSpeed){
+		}
+		
+		if (Input.GetKeyDown ("d")){
+			if ( lastKey == 'a' && speed <= maxSpeed){
 				speed += acceleration;
 			}
-			
 			lastKey = 'd';
 		}
-	
+			
+		if ( speed <= 0 )
+			speed = 0;
+		else
+			speed -= deceleration*Time.deltaTime;
 	}
 	
 	/// <summary>
