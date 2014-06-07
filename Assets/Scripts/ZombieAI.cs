@@ -31,7 +31,7 @@ public class ZombieAI : MonoBehaviour {
 	void Start () {
 	
 		InitializeReferences();
-		originalRotation = transform.localRotation;
+		originalRotation = transform.rotation;
 	}
 	
 	void InitializeReferences(){
@@ -47,16 +47,20 @@ public class ZombieAI : MonoBehaviour {
 			Debug.Log ("Found a player");
 			LookAt (player);
 		}
+		else{
+			ResetRotation();
+		}
 	}
 	
 	void FixedUpdate(){
 		rigidbody2D.AddRelativeForce(Vector3.up*speed);
 	}
 	
-	IEnumerator ResetRotation(){
+	void ResetRotation(){
 		if (transform.rotation != originalRotation){
-			//transform.rotation += originalRotation/100;
-			yield return null;
+			float scalingFactor = 1;
+			transform.rotation = Quaternion.Slerp (transform.rotation, originalRotation, 
+			                                       Time.deltaTime/scalingFactor);
 		}
 	}
 	
