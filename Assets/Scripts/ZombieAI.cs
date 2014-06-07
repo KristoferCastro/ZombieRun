@@ -18,16 +18,51 @@ public class ZombieAI : MonoBehaviour {
 	public float acceleration = 0.0005f;
 	
 	
+	SearchRadar searchRadar;
+	GameObject player;
 	
-	// Use this for initialization
+	Quaternion originalRotation;
+	
+	public float moveForce = 2f;
+	
+	// how much should we push the player
+	public float pushForce = 100f;
+	
 	void Start () {
-		rigidbody2D.velocity = new Vector2(0, speed);
+	
+		InitializeReferences();
+		originalRotation = transform.localRotation;
 	}
 	
-	// Update is called once per frame
-	void Update () {
-		speed += acceleration;
-		rigidbody2D.velocity = new Vector2(0, speed);
+	void InitializeReferences(){
+		player = GameObject.Find(GameObjectIDS.PLAYER);
+		searchRadar = gameObject.GetComponentInChildren<SearchRadar>();
+	}
 	
+	void Update () {
+		//speed += acceleration;
+		//rigidbody2D.velocity = new Vector2(0, speed);
+				
+		if (searchRadar.FoundPlayer){
+			Debug.Log ("Found a player");
+			LookAt (player);
+		}
+	}
+	
+	void FixedUpdate(){
+		rigidbody2D.AddRelativeForce(Vector3.up*speed);
+	}
+	
+	IEnumerator ResetRotation(){
+		if (transform.rotation != originalRotation){
+			//transform.rotation += originalRotation/100;
+			yield return null;
+		}
+	}
+	
+	void LookAt(GameObject target){
+		Vector3 diff = target.transform.position - gameObject.transform.position;
+		float rot_z = Mathf.Atan2 (diff.x, diff.y) * Mathf.Rad2Deg;
+		transform.rotation = Quaternion.Euler (0f,0f, -rot_z);
 	}
 }

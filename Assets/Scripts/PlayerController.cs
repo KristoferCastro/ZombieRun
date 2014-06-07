@@ -8,8 +8,8 @@ public class PlayerController : MonoBehaviour {
 	
 	public float maxSpeed = 20f;
 	public float speed = 0f;
-	public float acceleration = 0.35f;
-	public float deceleration = 3.5f;
+	public float acceleration = 0.3f;
+	public float deceleration = 2.5f;
 	//public float decelerationScalar = 1f;
 	
 	enum Looking : byte {Up = 0, Down, Left, Right, UpLeft, UpRight, DownLeft, DownRight}
@@ -52,7 +52,7 @@ public class PlayerController : MonoBehaviour {
 			
 		}
 		
-		if (Input.GetKeyDown ("d")){
+		else if (Input.GetKeyDown ("d")){
 			if ( lastKey == 'a' && speed <= maxSpeed){
 				speed += acceleration;
 			}
