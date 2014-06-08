@@ -41,7 +41,7 @@ public class PlayerController : MonoBehaviour {
 	/// Alternately pressing two keys make the player move faster
 	/// </summary>
 	void Move(){
-		Debug.Log ("Speed: " + speed);
+		//Debug.Log ("Speed: " + speed);
 				
 		if (Input.GetKeyDown("a")){
 			// if succesfully alternating, speed up

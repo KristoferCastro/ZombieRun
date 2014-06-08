@@ -28,10 +28,18 @@ public class ZombieAI : MonoBehaviour {
 	// how much should we push the player
 	public float pushForce = 100f;
 	
-	void Start () {
+	bool leaping;
 	
+	void Start () {
+		
+		InitializeVariables();
 		InitializeReferences();
 		originalRotation = transform.rotation;
+	}
+	
+	void InitializeVariables(){
+		originalRotation = transform.rotation;
+		leaping = false;
 	}
 	
 	void InitializeReferences(){
@@ -46,9 +54,14 @@ public class ZombieAI : MonoBehaviour {
 		if (searchRadar.FoundPlayer){
 			Debug.Log ("Found a player");
 			LookAt (player);
+			
+			if (!leaping){
+				LeapAtPlayer();
+				leaping = true;
+			}
 		}
 		else{
-			ResetRotation();
+			ResetZombie();
 		}
 	}
 	
@@ -56,12 +69,17 @@ public class ZombieAI : MonoBehaviour {
 		rigidbody2D.AddRelativeForce(Vector3.up*speed);
 	}
 	
-	void ResetRotation(){
+	void ResetZombie(){
+		leaping = false;
 		if (transform.rotation != originalRotation){
-			float scalingFactor = 1;
+			float scalingFactor = 0.5f;
 			transform.rotation = Quaternion.Slerp (transform.rotation, originalRotation, 
 			                                       Time.deltaTime/scalingFactor);
 		}
+	}
+	
+	void LeapAtPlayer(){
+		rigidbody2D.AddRelativeForce(Vector3.up*pushForce);
 	}
 	
 	void LookAt(GameObject target){

@@ -6,7 +6,7 @@ using System.Collections;
 /// </summary>
 public class ObstacleManager : MonoBehaviour {
 
-	public GameObject bus;
+	public GameObject zombie;
 
 	// keep track of all our clones so we can destroy it later
 	ArrayList clones;
@@ -14,21 +14,22 @@ public class ObstacleManager : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
 		clones = new ArrayList();
-		bus.rigidbody2D.velocity = new Vector2(-0.2f, 0f);
-		InvokeRepeating ("LaunchBus", 1f, 2f);
+		InvokeRepeating ("SpawnZombie", 1f, 2f);
 	}
 	
 	// Update is called once per frame
 	void Update () {
-		DestroyBusClonesWhenNotNeeded();
+		DestroyZombiesWhenNotNeeded();
 	}
 	
-	void LaunchBus(){
-		Vector2 randomPosition = new Vector2(Random.Range(transform.position.x, (-1f)*transform.position.x), transform.position.y);
-		clones.Add(Instantiate (bus, randomPosition, transform.rotation));
+	void SpawnZombie(){
 	}
 	
-	void DestroyBusClonesWhenNotNeeded(){
+	/// <summary>
+	/// Destroies the zombies when not needed--when they are not in
+	/// the screen anymore.
+	/// </summary>
+	void DestroyZombiesWhenNotNeeded(){
 		foreach (GameObject clone in clones){
 			if (clone && clone.transform.position.y < Camera.main.transform.position.y - 2f*Camera.main.orthographicSize){
 				DestroyImmediate (clone);
