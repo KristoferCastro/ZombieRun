@@ -36,6 +36,6 @@ public class Progress : MonoBehaviour {
 	
 	void calculateProgress(){
 		float distanceFromStart = player.position.y - startPoint.position.y;
-		progress =  distanceFromStart/totalDistance * 100; 
+		progress = distanceFromStart/totalDistance * 100; 
 	}
 }
