@@ -4,10 +4,12 @@ using System.Collections;
 /// <summary>
 /// This class is responsible for spawning/firing off obstacles 
 /// </summary>
-public class ObstacleManager : MonoBehaviour {
+public class ZombieManager : MonoBehaviour {
 
 	public GameObject zombie;
 	public GameObject player;
+	
+	public GameObject bus;
 	
 	// keep track of all our clones so we can destroy it later
 	ArrayList clones;

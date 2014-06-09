@@ -10,7 +10,8 @@ public static class GameObjectIDS{
 	public static string ZOMBIE_SEARCH_RADAR = "SearchRadar";
 	public static string STARTING_POINT = "StartingPoint";
 	public static string END_POINT = "EndPoint";
-	
+	public static string BUS = "BusTest";
+	public static string BUS_TAG = "Bus";
 	public static string HORIZONTAL_SPAWNER_START = "HorizontalSpawnStartPosition";
 	public static string HORIZONTAL_SPAWNER_END = "HorizontalSpawnEndPosition";
 }
