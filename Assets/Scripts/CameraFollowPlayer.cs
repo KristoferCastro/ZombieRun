@@ -34,8 +34,6 @@ public class CameraFollowPlayer : MonoBehaviour {
 		// the camera edges would be if it was ALWAYS following the player
 		float cameraLeftEdge = player.transform.position.x - cameraWidth;
 		float cameraRightEdge = player.transform.position.x + cameraWidth;
-
-		Debug.Log ("left: " + cameraLeftEdge + ", bound: " + cameraLeftBound.position.x);
 		if (cameraLeftEdge < cameraLeftBound.position.x || cameraRightEdge > cameraRightBound.position.x)
 						return true;
 		return false;

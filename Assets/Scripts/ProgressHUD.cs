@@ -30,7 +30,6 @@ public class ProgressHUD : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {	
-	Debug.Log ("prgoress: " + progressScript.progress);	
 		playerIcon.position = new Vector3(playerIcon.position.x, startPoint.position.y + totalDistance*progressScript.progress/100,
 		                                  playerIcon.position.z);
 	}

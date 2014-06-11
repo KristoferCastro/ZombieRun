@@ -4,7 +4,7 @@ using System.Collections;
 public class SpeedPowerup : MonoBehaviour {
 
 	public string tag = "Player";
-	public float maxSpeedIncrease = 0.35f;
+	float maxSpeedIncrease = 0.35f;
 	
 	// Use this for initialization
 	void Start () {
@@ -19,7 +19,6 @@ public class SpeedPowerup : MonoBehaviour {
 		if (other.gameObject.tag == tag){
 			DeleteAfter(0);
 			other.gameObject.GetComponent<PlayerController>().maxSpeed += maxSpeedIncrease;
-			Debug.Log ("Current Max Speed: " + other.gameObject.GetComponent<PlayerController>().maxSpeed);
 		}
 	}
 	
