@@ -8,9 +8,9 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 400000}
-  - 114: {fileID: 11400002}
+  - 114: {fileID: 11400000}
   - 60: {fileID: 6000000}
-  m_Layer: 12
+  m_Layer: 13
   m_Name: SearchRadar
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -26,12 +26,12 @@ GameObject:
   m_Component:
   - 4: {fileID: 400002}
   - 212: {fileID: 21200000}
-  - 114: {fileID: 11400000}
+  - 114: {fileID: 11400002}
   - 50: {fileID: 5000000}
   - 58: {fileID: 5800000}
-  m_Layer: 12
-  m_Name: ZombieTest
-  m_TagString: ZombieFromHorde
+  m_Layer: 13
+  m_Name: PushingZombieTest
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -54,9 +54,9 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 100002}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -.19627437, y: -4.09443331, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalRotation: {x: 0, y: 0, z: .01056528, w: -.99994421}
+  m_LocalPosition: {x: .142503142, y: 5.54592752, z: 0}
+  m_LocalScale: {x: .999999881, y: 1, z: 1}
   m_Children:
   - {fileID: 400000}
   m_Father: {fileID: 0}
@@ -67,9 +67,9 @@ Rigidbody2D:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 100002}
-  m_Mass: 2
-  m_LinearDrag: 1
-  m_AngularDrag: .0500000007
+  m_Mass: 5
+  m_LinearDrag: 4
+  m_AngularDrag: 0
   m_GravityScale: 0
   m_FixedAngle: 0
   m_IsKinematic: 0
@@ -85,7 +85,7 @@ CircleCollider2D:
   m_Enabled: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Radius: .479999989
+  m_Radius: .349999994
   m_Center: {x: 0, y: 0}
 --- !u!60 &6000000
 PolygonCollider2D:
@@ -99,26 +99,11 @@ PolygonCollider2D:
   m_Poly:
     m_Paths:
     - - {x: -.000926494598, y: 2.79357147}
-      - {x: 1.08532941, y: 2.81542373}
+      - {x: 1.03064358, y: 2.88281679}
       - {x: .201866984, y: -.937656283}
       - {x: -.248645186, y: -.925961852}
-      - {x: -.965958953, y: 2.75281119}
+      - {x: -1.4098506, y: 2.57113719}
 --- !u!114 &11400000
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 100002}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 93294d04bfb5c464d921f02ba67a5ef3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  speed: .5
-  acceleration: .000500000024
-  moveForce: 10
-  leapForce: 50
---- !u!114 &11400002
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -129,6 +114,22 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 84faa1c7c5cc3274dafa0287d3658862, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &11400002
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100002}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 59a36bd43f8669a4581cd646cf84af3b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: .5
+  acceleration: .000500000024
+  player: {fileID: 0}
+  moveForce: 10
+  leapForce: 100
 --- !u!212 &21200000
 SpriteRenderer:
   m_ObjectHideFlags: 1
@@ -148,8 +149,8 @@ SpriteRenderer:
   m_LightProbeAnchor: {fileID: 0}
   m_ScaleInLightmap: 1
   m_SortingLayerID: 0
-  m_SortingOrder: 2
-  m_Sprite: {fileID: 21300000, guid: 6d4221c613694f84fbf83cf7d1e5f454, type: 3}
+  m_SortingOrder: 1
+  m_Sprite: {fileID: 21300000, guid: 597384886e5911a4ea6a85654d2d21f7, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
 --- !u!1001 &100100000
 Prefab:

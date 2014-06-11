@@ -5,7 +5,7 @@ public class SpeedPowerup : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-		DeleteAfter (5);
+		DeleteAfter (7);
 	}
 	
 	void DeleteAfter(float seconds){

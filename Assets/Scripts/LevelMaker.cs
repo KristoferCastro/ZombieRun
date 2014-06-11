@@ -8,6 +8,7 @@ using System.Collections;
 public class LevelMaker : MonoBehaviour {
 
 	public GameObject bus;
+	public GameObject[] vehicles;
 	public GameObject spawnArea;
 	
 	
@@ -28,7 +29,7 @@ public class LevelMaker : MonoBehaviour {
 		minY = spawnArea.transform.position.y - spawnBox.size.y/2;
 		maxY = minY + spawnBox.size.y;
 		while (numberOfBus < MAX_NUMBER_BUS){
-			GameObject clone = (GameObject) Instantiate(bus, RandomBusPosition(), Quaternion.Euler(new Vector3(0, 0, Random.Range(0, 360))));
+			GameObject clone = (GameObject) Instantiate(vehicles[Random.Range (0, vehicles.Length-1)], RandomBusPosition(), Quaternion.Euler(new Vector3(0, 0, Random.Range(0, 360))));
 			clone.transform.parent = GameObject.Find(GameObjectIDS.LEVEL_MANAGER).transform;
 			// Make sure we are not putting the bus on top of another bus
 			do{
@@ -39,9 +40,9 @@ public class LevelMaker : MonoBehaviour {
 		}
 	}
 
-	bool AlreadyABusThere(GameObject bus){
-		float accuracy = 3; // size of circle
-		return Physics.OverlapSphere (bus.transform.position, 3).Length > 0;
+	bool AlreadyABusThere(GameObject clone){
+		float accuracy = 5; // size of circle
+		return Physics.OverlapSphere (bus.transform.position, accuracy).Length > 0;
 	}
 	
 	Vector3 RandomBusPosition(){

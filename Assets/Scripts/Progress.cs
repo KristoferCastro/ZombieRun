@@ -32,7 +32,7 @@ public class Progress : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 		calculateProgress();
-		Debug.Log ("Player progress: " + progress + "%");
+		//Debug.Log ("Player progress: " + progress + "%");
 	}
 	
 	void calculateProgress(){
