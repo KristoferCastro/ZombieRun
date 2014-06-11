@@ -11,9 +11,6 @@ public class ZombieManager : MonoBehaviour {
 	
 	public GameObject bus;
 	
-	// keep track of all our clones so we can destroy it later
-	ArrayList clones;
-	
 	// variables that make the spawning work
 	// They spawn in the edges of a imaginary spawn circle
 	// that is some units ahead of the player to give the 
@@ -30,7 +27,6 @@ public class ZombieManager : MonoBehaviour {
 	
 	// Use this for initialization
 	void Start () {
-		clones = new ArrayList();
 		InvokeRepeating ("SpawnZombieTopOnly", 1f, 2.5f);
 		
 		spawnRadius = gameObject.GetComponent<CircleCollider2D>().radius;

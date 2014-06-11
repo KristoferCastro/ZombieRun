@@ -35,7 +35,14 @@ public class ZombieAI : MonoBehaviour {
 		InitializeVariables();
 		InitializeReferences();
 		originalRotation = transform.rotation;
+		IgnoreCollisionsWithBus(true);
 	}
+	
+	protected void IgnoreCollisionsWithBus(bool decision){
+		GameObject bus = GameObject.FindGameObjectWithTag(GameObjectIDS.BUS_TAG);
+		Physics2D.IgnoreLayerCollision(gameObject.layer, bus.layer, decision);
+	}
+	
 	
 	void InitializeVariables(){
 		originalRotation = transform.rotation;

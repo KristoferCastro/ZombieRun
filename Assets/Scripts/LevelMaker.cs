@@ -29,6 +29,8 @@ public class LevelMaker : MonoBehaviour {
 		maxY = minY + spawnBox.size.y;
 		while (numberOfBus < MAX_NUMBER_BUS){
 			GameObject clone = (GameObject) Instantiate(bus, RandomBusPosition(), Quaternion.Euler(new Vector3(0, 0, Random.Range(0, 360))));
+			clone.transform.parent = GameObject.Find(GameObjectIDS.LEVEL_MANAGER).transform;
+			// Make sure we are not putting the bus on top of another bus
 			do{
 				clone.transform.position = RandomBusPosition ();
 			} while (AlreadyABusThere(clone));
