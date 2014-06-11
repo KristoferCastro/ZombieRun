@@ -738,6 +738,8 @@ Transform:
   m_LocalPosition: {x: -.585862041, y: -.531666458, z: -1.1484375}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
+  - {fileID: 1316709179}
+  - {fileID: 1437659428}
   - {fileID: 1218959428}
   - {fileID: 288409309}
   - {fileID: 504982379}
@@ -748,8 +750,6 @@ Transform:
   - {fileID: 713012362}
   - {fileID: 459376422}
   - {fileID: 450552193}
-  - {fileID: 1316709179}
-  - {fileID: 1437659428}
   m_Father: {fileID: 0}
   m_RootOrder: 9
 --- !u!1 &216237225
@@ -891,7 +891,7 @@ Transform:
   - {fileID: 499373343}
   - {fileID: 1875501089}
   m_Father: {fileID: 175764186}
-  m_RootOrder: 1
+  m_RootOrder: 3
 --- !u!50 &288409310
 Rigidbody2D:
   m_ObjectHideFlags: 0
@@ -1271,6 +1271,56 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1528668058}
   m_RootOrder: 1
+--- !u!1 &432615173
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 432615175}
+  - 212: {fileID: 432615174}
+  m_Layer: 10
+  m_Name: gui-progress-icon2
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!212 &432615174
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 432615173}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_LightmapIndex: 255
+  m_LightmapTilingOffset: {x: 1, y: 1, z: 0, w: 0}
+  m_Materials:
+  - {fileID: 10754, guid: 0000000000000000e000000000000000, type: 0}
+  m_SubsetIndices: 
+  m_StaticBatchRoot: {fileID: 0}
+  m_UseLightProbes: 0
+  m_LightProbeAnchor: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_SortingLayerID: 0
+  m_SortingOrder: 0
+  m_Sprite: {fileID: 21300000, guid: 9b39cf22e54b41347b2d977f6312a829, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+--- !u!4 &432615175
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 432615173}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 19.4898052, y: -6.73263454, z: 1.14819336}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 945927916}
+  m_RootOrder: 1
 --- !u!1001 &445269519
 Prefab:
   m_ObjectHideFlags: 0
@@ -1363,7 +1413,7 @@ Transform:
   - {fileID: 860585136}
   - {fileID: 970911112}
   m_Father: {fileID: 175764186}
-  m_RootOrder: 9
+  m_RootOrder: 11
 --- !u!50 &450552194
 Rigidbody2D:
   m_ObjectHideFlags: 0
@@ -1452,7 +1502,7 @@ Transform:
   - {fileID: 1126765298}
   - {fileID: 1922844025}
   m_Father: {fileID: 175764186}
-  m_RootOrder: 8
+  m_RootOrder: 10
 --- !u!50 &459376423
 Rigidbody2D:
   m_ObjectHideFlags: 0
@@ -1766,7 +1816,7 @@ Transform:
   - {fileID: 1249742596}
   - {fileID: 1904978369}
   m_Father: {fileID: 175764186}
-  m_RootOrder: 2
+  m_RootOrder: 4
 --- !u!1 &513580817
 GameObject:
   m_ObjectHideFlags: 0
@@ -1837,7 +1887,7 @@ Transform:
   - {fileID: 1234556953}
   - {fileID: 1497482058}
   m_Father: {fileID: 175764186}
-  m_RootOrder: 3
+  m_RootOrder: 5
 --- !u!50 &514245279
 Rigidbody2D:
   m_ObjectHideFlags: 0
@@ -1966,7 +2016,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 522091837}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 20.1435413, y: 1.32709122, z: -10}
+  m_LocalPosition: {x: 19.4700775, y: 2.337286, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -2326,7 +2376,7 @@ Transform:
   - {fileID: 697888010}
   - {fileID: 934708846}
   m_Father: {fileID: 175764186}
-  m_RootOrder: 5
+  m_RootOrder: 7
 --- !u!50 &660642022
 Rigidbody2D:
   m_ObjectHideFlags: 0
@@ -2492,6 +2542,56 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1186257667}
   m_RootOrder: 5
+--- !u!1 &712081330
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 712081332}
+  - 212: {fileID: 712081331}
+  m_Layer: 0
+  m_Name: river
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!212 &712081331
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 712081330}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_LightmapIndex: 255
+  m_LightmapTilingOffset: {x: 1, y: 1, z: 0, w: 0}
+  m_Materials:
+  - {fileID: 10754, guid: 0000000000000000e000000000000000, type: 0}
+  m_SubsetIndices: 
+  m_StaticBatchRoot: {fileID: 0}
+  m_UseLightProbes: 0
+  m_LightProbeAnchor: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_SortingLayerID: 0
+  m_SortingOrder: 0
+  m_Sprite: {fileID: 21300000, guid: acc857be885694a4e8f7d53e6cb9e6bf, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+--- !u!4 &712081332
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 712081330}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -1.28836632, y: 70.8838348, z: 0}
+  m_LocalScale: {x: 1.51112163, y: 1.51112163, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 12
 --- !u!1 &713012361
 GameObject:
   m_ObjectHideFlags: 0
@@ -2523,7 +2623,7 @@ Transform:
   - {fileID: 216237226}
   - {fileID: 758599481}
   m_Father: {fileID: 175764186}
-  m_RootOrder: 7
+  m_RootOrder: 9
 --- !u!50 &713012363
 Rigidbody2D:
   m_ObjectHideFlags: 0
@@ -3142,6 +3242,56 @@ Transform:
   m_Children: []
   m_Father: {fileID: 637824645}
   m_RootOrder: 1
+--- !u!1 &822409588
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 822409590}
+  - 212: {fileID: 822409589}
+  m_Layer: 10
+  m_Name: gui-progressbar
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!212 &822409589
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 822409588}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_LightmapIndex: 255
+  m_LightmapTilingOffset: {x: 1, y: 1, z: 0, w: 0}
+  m_Materials:
+  - {fileID: 10754, guid: 0000000000000000e000000000000000, type: 0}
+  m_SubsetIndices: 
+  m_StaticBatchRoot: {fileID: 0}
+  m_UseLightProbes: 0
+  m_LightProbeAnchor: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_SortingLayerID: 0
+  m_SortingOrder: 0
+  m_Sprite: {fileID: 21300000, guid: 06c4bd726139c114fb282a07181d1c59, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+--- !u!4 &822409590
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 822409588}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 19.3935947, y: -3.65395117, z: 1.14819336}
+  m_LocalScale: {x: .400000006, y: .400000006, z: 1}
+  m_Children: []
+  m_Father: {fileID: 945927916}
+  m_RootOrder: 0
 --- !u!1 &824101531
 GameObject:
   m_ObjectHideFlags: 0
@@ -3414,6 +3564,37 @@ CircleCollider2D:
   m_IsTrigger: 0
   m_Radius: .5
   m_Center: {x: 0, y: -.100000001}
+--- !u!1 &945927915
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 945927916}
+  m_Layer: 0
+  m_Name: Progress HUD
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &945927916
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 945927915}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 822409590}
+  - {fileID: 432615175}
+  - {fileID: 1708993618}
+  - {fileID: 1475894776}
+  m_Father: {fileID: 1177926152}
+  m_RootOrder: 2
 --- !u!1001 &956967394
 Prefab:
   m_ObjectHideFlags: 0
@@ -3595,7 +3776,7 @@ Transform:
   - {fileID: 12320240}
   - {fileID: 1743034024}
   m_Father: {fileID: 175764186}
-  m_RootOrder: 4
+  m_RootOrder: 6
 --- !u!50 &978878785
 Rigidbody2D:
   m_ObjectHideFlags: 0
@@ -4202,7 +4383,7 @@ Transform:
   - {fileID: 1463271549}
   - {fileID: 294696432}
   m_Father: {fileID: 175764186}
-  m_RootOrder: 6
+  m_RootOrder: 8
 --- !u!50 &1147817668
 Rigidbody2D:
   m_ObjectHideFlags: 0
@@ -4409,6 +4590,7 @@ Transform:
   m_Children:
   - {fileID: 2069855996}
   - {fileID: 2026789226}
+  - {fileID: 945927916}
   m_Father: {fileID: 0}
   m_RootOrder: 6
 --- !u!1 &1186257666
@@ -4505,7 +4687,7 @@ Transform:
   - {fileID: 1864885588}
   - {fileID: 109705178}
   m_Father: {fileID: 175764186}
-  m_RootOrder: 0
+  m_RootOrder: 2
 --- !u!50 &1218959429
 Rigidbody2D:
   m_ObjectHideFlags: 0
@@ -4954,7 +5136,7 @@ Transform:
   - {fileID: 1593785096}
   - {fileID: 1267239221}
   m_Father: {fileID: 175764186}
-  m_RootOrder: 10
+  m_RootOrder: 0
 --- !u!1 &1377386516
 GameObject:
   m_ObjectHideFlags: 0
@@ -5036,7 +5218,7 @@ Transform:
   - {fileID: 385962368}
   - {fileID: 1625284404}
   m_Father: {fileID: 175764186}
-  m_RootOrder: 11
+  m_RootOrder: 1
 --- !u!50 &1437659429
 Rigidbody2D:
   m_ObjectHideFlags: 0
@@ -5133,7 +5315,7 @@ SpriteRenderer:
   m_ScaleInLightmap: 1
   m_SortingLayerID: 1917754215
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 1743ee9588abdc645a8fd61efd2ec36f, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 0aa62d721a5ebc946963ff5625a71437, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
 --- !u!4 &1462744275
 Transform:
@@ -5298,6 +5480,33 @@ SpriteRenderer:
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 8ddfff17eac7c664896653751aa8e26a, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
+--- !u!1 &1475894775
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 1475894776}
+  m_Layer: 0
+  m_Name: ProgressHUD Start
+  m_TagString: Untagged
+  m_Icon: {fileID: 120240766, guid: 0000000000000000d000000000000000, type: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1475894776
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1475894775}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 19.3817234, y: -6.82099009, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 945927916}
+  m_RootOrder: 3
 --- !u!1 &1483025688
 GameObject:
   m_ObjectHideFlags: 0
@@ -5814,6 +6023,33 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1186257667}
   m_RootOrder: 3
+--- !u!1 &1708993617
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 1708993618}
+  m_Layer: 0
+  m_Name: ProgressHUD End
+  m_TagString: Untagged
+  m_Icon: {fileID: 120240766, guid: 0000000000000000d000000000000000, type: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1708993618
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1708993617}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 19.4887905, y: -.374512196, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 945927916}
+  m_RootOrder: 2
 --- !u!1001 &1710377838
 Prefab:
   m_ObjectHideFlags: 0
@@ -6481,7 +6717,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 2026789225}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 5.18199158, y: 53.4158592, z: 0}
+  m_LocalPosition: {x: 5.13003254, y: 69.1557922, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1177926152}
