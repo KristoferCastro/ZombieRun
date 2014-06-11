@@ -123,7 +123,7 @@ Transform:
   m_LocalScale: {x: 1.69526029, y: 1.69526029, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 10
+  m_RootOrder: 8
 --- !u!1 &12320239
 GameObject:
   m_ObjectHideFlags: 0
@@ -373,9 +373,22 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400004, guid: 4f86c8bcbd836324da844d309912a821, type: 2}
       propertyPath: m_RootOrder
-      value: 8
+      value: 1
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    - target: {fileID: 5800000, guid: 4f86c8bcbd836324da844d309912a821, type: 2}
+      propertyPath: m_IsTrigger
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400004, guid: 4f86c8bcbd836324da844d309912a821, type: 2}
+      propertyPath: followPlayerEverywhere
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400004, guid: 4f86c8bcbd836324da844d309912a821, type: 2}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 1462744273}
+    m_RemovedComponents:
+    - {fileID: 0}
   m_ParentPrefab: {fileID: 100100000, guid: 4f86c8bcbd836324da844d309912a821, type: 2}
   m_RootGameObject: {fileID: 1147817666}
   m_IsPrefabParent: 0
@@ -419,6 +432,22 @@ Prefab:
       propertyPath: m_RootMapOrder
       value: 
       objectReference: {fileID: 0}
+    - target: {fileID: 400004, guid: 76c199c1d161bd54aa705fd225a5fac7, type: 2}
+      propertyPath: m_RootOrder
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 5800000, guid: 76c199c1d161bd54aa705fd225a5fac7, type: 2}
+      propertyPath: m_IsTrigger
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400004, guid: 76c199c1d161bd54aa705fd225a5fac7, type: 2}
+      propertyPath: followPlayerEverywhere
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400004, guid: 76c199c1d161bd54aa705fd225a5fac7, type: 2}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 1462744273}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 76c199c1d161bd54aa705fd225a5fac7, type: 2}
   m_RootGameObject: {fileID: 1316709175}
@@ -432,7 +461,6 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 109705178}
-  - 114: {fileID: 109705177}
   - 58: {fileID: 109705176}
   m_Layer: 12
   m_Name: HitCircle
@@ -450,23 +478,9 @@ CircleCollider2D:
   m_GameObject: {fileID: 109705175}
   m_Enabled: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_Radius: .5
   m_Center: {x: 0, y: -.100000001}
---- !u!114 &109705177
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 11400000, guid: 4f86c8bcbd836324da844d309912a821,
-    type: 2}
-  m_PrefabInternal: {fileID: 445269519}
-  m_GameObject: {fileID: 109705175}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 64849406af35a5841b5a16c97c8a713f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  tag: Player
-  level: 
 --- !u!4 &109705178
 Transform:
   m_ObjectHideFlags: 0
@@ -520,8 +534,20 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400004, guid: 76c199c1d161bd54aa705fd225a5fac7, type: 2}
       propertyPath: m_RootOrder
-      value: 9
+      value: 2
       objectReference: {fileID: 0}
+    - target: {fileID: 5800000, guid: 76c199c1d161bd54aa705fd225a5fac7, type: 2}
+      propertyPath: m_IsTrigger
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400004, guid: 76c199c1d161bd54aa705fd225a5fac7, type: 2}
+      propertyPath: followPlayerEverywhere
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400004, guid: 76c199c1d161bd54aa705fd225a5fac7, type: 2}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 1462744273}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 76c199c1d161bd54aa705fd225a5fac7, type: 2}
   m_RootGameObject: {fileID: 713012361}
@@ -568,8 +594,20 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400004, guid: 76c199c1d161bd54aa705fd225a5fac7, type: 2}
       propertyPath: m_RootOrder
-      value: 10
+      value: 3
       objectReference: {fileID: 0}
+    - target: {fileID: 5800000, guid: 76c199c1d161bd54aa705fd225a5fac7, type: 2}
+      propertyPath: m_IsTrigger
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400004, guid: 76c199c1d161bd54aa705fd225a5fac7, type: 2}
+      propertyPath: followPlayerEverywhere
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400004, guid: 76c199c1d161bd54aa705fd225a5fac7, type: 2}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 1462744273}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 76c199c1d161bd54aa705fd225a5fac7, type: 2}
   m_RootGameObject: {fileID: 459376421}
@@ -700,6 +738,10 @@ Transform:
   m_LocalPosition: {x: -.585862041, y: -.531666458, z: -1.1484375}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
+  - {fileID: 288409309}
+  - {fileID: 504982379}
+  - {fileID: 514245278}
+  - {fileID: 978878784}
   - {fileID: 660642021}
   - {fileID: 1147817667}
   - {fileID: 713012362}
@@ -708,12 +750,8 @@ Transform:
   - {fileID: 1316709179}
   - {fileID: 1437659428}
   - {fileID: 1218959428}
-  - {fileID: 288409309}
-  - {fileID: 504982379}
-  - {fileID: 514245278}
-  - {fileID: 978878784}
   m_Father: {fileID: 0}
-  m_RootOrder: 11
+  m_RootOrder: 9
 --- !u!1 &216237225
 GameObject:
   m_ObjectHideFlags: 0
@@ -853,7 +891,7 @@ Transform:
   - {fileID: 499373343}
   - {fileID: 1875501089}
   m_Father: {fileID: 175764186}
-  m_RootOrder: 8
+  m_RootOrder: 0
 --- !u!50 &288409310
 Rigidbody2D:
   m_ObjectHideFlags: 0
@@ -884,7 +922,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: .949999988
   acceleration: .000500000024
-  player: {fileID: 0}
+  followPlayerEverywhere: 1
+  player: {fileID: 1462744273}
   moveForce: 2
   leapForce: 50
 --- !u!212 &288409312
@@ -918,7 +957,6 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 294696432}
-  - 114: {fileID: 294696434}
   - 58: {fileID: 294696433}
   m_Layer: 12
   m_Name: HitCircle
@@ -948,23 +986,9 @@ CircleCollider2D:
   m_GameObject: {fileID: 294696431}
   m_Enabled: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_Radius: .5
   m_Center: {x: 0, y: -.100000001}
---- !u!114 &294696434
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 11400000, guid: 4f86c8bcbd836324da844d309912a821,
-    type: 2}
-  m_PrefabInternal: {fileID: 96667065}
-  m_GameObject: {fileID: 294696431}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 64849406af35a5841b5a16c97c8a713f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  tag: Player
-  level: 
 --- !u!1 &302525501
 GameObject:
   m_ObjectHideFlags: 0
@@ -1141,8 +1165,20 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400004, guid: 76c199c1d161bd54aa705fd225a5fac7, type: 2}
       propertyPath: m_RootOrder
-      value: 11
+      value: 4
       objectReference: {fileID: 0}
+    - target: {fileID: 5800000, guid: 76c199c1d161bd54aa705fd225a5fac7, type: 2}
+      propertyPath: m_IsTrigger
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400004, guid: 76c199c1d161bd54aa705fd225a5fac7, type: 2}
+      propertyPath: followPlayerEverywhere
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400004, guid: 76c199c1d161bd54aa705fd225a5fac7, type: 2}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 1462744273}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 76c199c1d161bd54aa705fd225a5fac7, type: 2}
   m_RootGameObject: {fileID: 450552192}
@@ -1189,8 +1225,20 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400004, guid: 76c199c1d161bd54aa705fd225a5fac7, type: 2}
       propertyPath: m_RootOrder
-      value: 3
+      value: 8
       objectReference: {fileID: 0}
+    - target: {fileID: 5800000, guid: 76c199c1d161bd54aa705fd225a5fac7, type: 2}
+      propertyPath: m_IsTrigger
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400004, guid: 76c199c1d161bd54aa705fd225a5fac7, type: 2}
+      propertyPath: followPlayerEverywhere
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400004, guid: 76c199c1d161bd54aa705fd225a5fac7, type: 2}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 1462744273}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 76c199c1d161bd54aa705fd225a5fac7, type: 2}
   m_RootGameObject: {fileID: 288409308}
@@ -1264,9 +1312,22 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400004, guid: 4f86c8bcbd836324da844d309912a821, type: 2}
       propertyPath: m_RootOrder
-      value: 2
+      value: 7
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    - target: {fileID: 5800000, guid: 4f86c8bcbd836324da844d309912a821, type: 2}
+      propertyPath: m_IsTrigger
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400004, guid: 4f86c8bcbd836324da844d309912a821, type: 2}
+      propertyPath: followPlayerEverywhere
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400004, guid: 4f86c8bcbd836324da844d309912a821, type: 2}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 1462744273}
+    m_RemovedComponents:
+    - {fileID: 0}
   m_ParentPrefab: {fileID: 100100000, guid: 4f86c8bcbd836324da844d309912a821, type: 2}
   m_RootGameObject: {fileID: 1218959427}
   m_IsPrefabParent: 0
@@ -1302,7 +1363,7 @@ Transform:
   - {fileID: 860585136}
   - {fileID: 970911112}
   m_Father: {fileID: 175764186}
-  m_RootOrder: 4
+  m_RootOrder: 8
 --- !u!50 &450552194
 Rigidbody2D:
   m_ObjectHideFlags: 0
@@ -1333,7 +1394,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: .949999988
   acceleration: .000500000024
-  player: {fileID: 0}
+  followPlayerEverywhere: 1
+  player: {fileID: 1462744273}
   moveForce: 2
   leapForce: 50
 --- !u!212 &450552196
@@ -1390,7 +1452,7 @@ Transform:
   - {fileID: 1126765298}
   - {fileID: 1922844025}
   m_Father: {fileID: 175764186}
-  m_RootOrder: 3
+  m_RootOrder: 7
 --- !u!50 &459376423
 Rigidbody2D:
   m_ObjectHideFlags: 0
@@ -1421,7 +1483,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: .949999988
   acceleration: .000500000024
-  player: {fileID: 0}
+  followPlayerEverywhere: 1
+  player: {fileID: 1462744273}
   moveForce: 2
   leapForce: 50
 --- !u!212 &459376425
@@ -1488,8 +1551,20 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400004, guid: 76c199c1d161bd54aa705fd225a5fac7, type: 2}
       propertyPath: m_RootOrder
-      value: 4
+      value: 9
       objectReference: {fileID: 0}
+    - target: {fileID: 5800000, guid: 76c199c1d161bd54aa705fd225a5fac7, type: 2}
+      propertyPath: m_IsTrigger
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400004, guid: 76c199c1d161bd54aa705fd225a5fac7, type: 2}
+      propertyPath: followPlayerEverywhere
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400004, guid: 76c199c1d161bd54aa705fd225a5fac7, type: 2}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 1462744273}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 76c199c1d161bd54aa705fd225a5fac7, type: 2}
   m_RootGameObject: {fileID: 504982375}
@@ -1651,7 +1726,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: .949999988
   acceleration: .000500000024
-  player: {fileID: 0}
+  followPlayerEverywhere: 1
+  player: {fileID: 1462744273}
   moveForce: 2
   leapForce: 50
 --- !u!212 &504982378
@@ -1690,7 +1766,7 @@ Transform:
   - {fileID: 1249742596}
   - {fileID: 1904978369}
   m_Father: {fileID: 175764186}
-  m_RootOrder: 9
+  m_RootOrder: 1
 --- !u!1 &513580817
 GameObject:
   m_ObjectHideFlags: 0
@@ -1761,7 +1837,7 @@ Transform:
   - {fileID: 1234556953}
   - {fileID: 1497482058}
   m_Father: {fileID: 175764186}
-  m_RootOrder: 10
+  m_RootOrder: 2
 --- !u!50 &514245279
 Rigidbody2D:
   m_ObjectHideFlags: 0
@@ -1792,7 +1868,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: .949999988
   acceleration: .000500000024
-  player: {fileID: 0}
+  followPlayerEverywhere: 1
+  player: {fileID: 1462744273}
   moveForce: 2
   leapForce: 50
 --- !u!212 &514245281
@@ -1935,9 +2012,22 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400004, guid: 4f86c8bcbd836324da844d309912a821, type: 2}
       propertyPath: m_RootOrder
-      value: 7
+      value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    - target: {fileID: 5800000, guid: 4f86c8bcbd836324da844d309912a821, type: 2}
+      propertyPath: m_IsTrigger
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400004, guid: 4f86c8bcbd836324da844d309912a821, type: 2}
+      propertyPath: followPlayerEverywhere
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400004, guid: 4f86c8bcbd836324da844d309912a821, type: 2}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 1462744273}
+    m_RemovedComponents:
+    - {fileID: 0}
   m_ParentPrefab: {fileID: 100100000, guid: 4f86c8bcbd836324da844d309912a821, type: 2}
   m_RootGameObject: {fileID: 660642020}
   m_IsPrefabParent: 0
@@ -2173,7 +2263,7 @@ Transform:
   - {fileID: 697888010}
   - {fileID: 934708846}
   m_Father: {fileID: 175764186}
-  m_RootOrder: 0
+  m_RootOrder: 4
 --- !u!50 &660642022
 Rigidbody2D:
   m_ObjectHideFlags: 0
@@ -2204,7 +2294,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: .949999988
   acceleration: .000500000024
-  player: {fileID: 0}
+  followPlayerEverywhere: 1
+  player: {fileID: 1462744273}
   moveForce: 2
   leapForce: 50
 --- !u!212 &660642024
@@ -2369,7 +2460,7 @@ Transform:
   - {fileID: 216237226}
   - {fileID: 758599481}
   m_Father: {fileID: 175764186}
-  m_RootOrder: 2
+  m_RootOrder: 6
 --- !u!50 &713012363
 Rigidbody2D:
   m_ObjectHideFlags: 0
@@ -2400,7 +2491,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: .949999988
   acceleration: .000500000024
-  player: {fileID: 0}
+  followPlayerEverywhere: 1
+  player: {fileID: 1462744273}
   moveForce: 2
   leapForce: 50
 --- !u!212 &713012365
@@ -2584,7 +2676,6 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 758599481}
-  - 114: {fileID: 758599483}
   - 58: {fileID: 758599482}
   m_Layer: 12
   m_Name: HitCircle
@@ -2614,23 +2705,9 @@ CircleCollider2D:
   m_GameObject: {fileID: 758599480}
   m_Enabled: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_Radius: .5
   m_Center: {x: 0, y: -.100000001}
---- !u!114 &758599483
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 11400000, guid: 76c199c1d161bd54aa705fd225a5fac7,
-    type: 2}
-  m_PrefabInternal: {fileID: 110047566}
-  m_GameObject: {fileID: 758599480}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 64849406af35a5841b5a16c97c8a713f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  tag: Player
-  level: 
 --- !u!1 &788001178
 GameObject:
   m_ObjectHideFlags: 0
@@ -2817,7 +2894,7 @@ Transform:
   m_Children:
   - {fileID: 513580819}
   m_Father: {fileID: 0}
-  m_RootOrder: 7
+  m_RootOrder: 5
 --- !u!114 &898229212
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2847,7 +2924,6 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 934708846}
-  - 114: {fileID: 934708848}
   - 58: {fileID: 934708847}
   m_Layer: 12
   m_Name: HitCircle
@@ -2877,23 +2953,9 @@ CircleCollider2D:
   m_GameObject: {fileID: 934708845}
   m_Enabled: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_Radius: .5
   m_Center: {x: 0, y: -.100000001}
---- !u!114 &934708848
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 11400000, guid: 4f86c8bcbd836324da844d309912a821,
-    type: 2}
-  m_PrefabInternal: {fileID: 537187079}
-  m_GameObject: {fileID: 934708845}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 64849406af35a5841b5a16c97c8a713f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  tag: Player
-  level: 
 --- !u!1001 &956967394
 Prefab:
   m_ObjectHideFlags: 0
@@ -2935,8 +2997,20 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400004, guid: 76c199c1d161bd54aa705fd225a5fac7, type: 2}
       propertyPath: m_RootOrder
-      value: 5
+      value: 10
       objectReference: {fileID: 0}
+    - target: {fileID: 5800000, guid: 76c199c1d161bd54aa705fd225a5fac7, type: 2}
+      propertyPath: m_IsTrigger
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400004, guid: 76c199c1d161bd54aa705fd225a5fac7, type: 2}
+      propertyPath: followPlayerEverywhere
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400004, guid: 76c199c1d161bd54aa705fd225a5fac7, type: 2}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 1462744273}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 76c199c1d161bd54aa705fd225a5fac7, type: 2}
   m_RootGameObject: {fileID: 514245277}
@@ -3000,7 +3074,6 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 970911112}
-  - 114: {fileID: 970911114}
   - 58: {fileID: 970911113}
   m_Layer: 12
   m_Name: HitCircle
@@ -3030,23 +3103,9 @@ CircleCollider2D:
   m_GameObject: {fileID: 970911111}
   m_Enabled: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_Radius: .5
   m_Center: {x: 0, y: -.100000001}
---- !u!114 &970911114
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 11400000, guid: 76c199c1d161bd54aa705fd225a5fac7,
-    type: 2}
-  m_PrefabInternal: {fileID: 415741090}
-  m_GameObject: {fileID: 970911111}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 64849406af35a5841b5a16c97c8a713f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  tag: Player
-  level: 
 --- !u!1 &978878783
 GameObject:
   m_ObjectHideFlags: 0
@@ -3078,7 +3137,7 @@ Transform:
   - {fileID: 12320240}
   - {fileID: 1743034024}
   m_Father: {fileID: 175764186}
-  m_RootOrder: 11
+  m_RootOrder: 3
 --- !u!50 &978878785
 Rigidbody2D:
   m_ObjectHideFlags: 0
@@ -3109,7 +3168,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: .949999988
   acceleration: .000500000024
-  player: {fileID: 0}
+  followPlayerEverywhere: 1
+  player: {fileID: 1462744273}
   moveForce: 2
   leapForce: 50
 --- !u!212 &978878787
@@ -3198,6 +3258,7 @@ GameObject:
   - 124: {fileID: 989923230}
   - 81: {fileID: 989923229}
   - 114: {fileID: 989923234}
+  - 82: {fileID: 989923235}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -3282,6 +3343,64 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 1462744273}
+--- !u!82 &989923235
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 989923228}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_audioClip: {fileID: 8300000, guid: 429b8240807e1be468af22dbb2250ade, type: 3}
+  m_PlayOnAwake: 1
+  m_Volume: .5
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    - time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
 --- !u!1 &1010916625
 GameObject:
   m_ObjectHideFlags: 0
@@ -3332,6 +3451,60 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1186257667}
   m_RootOrder: 8
+--- !u!1 &1020002765
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 100000, guid: 76c199c1d161bd54aa705fd225a5fac7, type: 2}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 1020002768}
+  - 58: {fileID: 1020002767}
+  - 114: {fileID: 1020002766}
+  m_Layer: 12
+  m_Name: HitCircle
+  m_TagString: ZombieFromHorde
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1020002766
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1020002765}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 64849406af35a5841b5a16c97c8a713f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tag: ZombieFromHorde
+  level: Title Page
+--- !u!58 &1020002767
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 5800000, guid: 76c199c1d161bd54aa705fd225a5fac7,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1020002765}
+  m_Enabled: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Radius: .5
+  m_Center: {x: 0, y: -.100000001}
+--- !u!4 &1020002768
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 400000, guid: 76c199c1d161bd54aa705fd225a5fac7, type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1020002765}
+  m_LocalRotation: {x: 0, y: 0, z: -.03887688, w: -.999244034}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 2.85714293, y: 2.85714293, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1462744275}
+  m_RootOrder: 0
 --- !u!1 &1048229422
 GameObject:
   m_ObjectHideFlags: 0
@@ -3571,7 +3744,7 @@ Transform:
   - {fileID: 1463271549}
   - {fileID: 294696432}
   m_Father: {fileID: 175764186}
-  m_RootOrder: 1
+  m_RootOrder: 5
 --- !u!50 &1147817668
 Rigidbody2D:
   m_ObjectHideFlags: 0
@@ -3602,7 +3775,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: .949999988
   acceleration: .000500000024
-  player: {fileID: 0}
+  followPlayerEverywhere: 1
+  player: {fileID: 1462744273}
   moveForce: 2
   leapForce: 50
 --- !u!212 &1147817670
@@ -3778,7 +3952,7 @@ Transform:
   - {fileID: 2069855996}
   - {fileID: 2026789226}
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 3
 --- !u!1 &1186257666
 GameObject:
   m_ObjectHideFlags: 0
@@ -3841,7 +4015,7 @@ Transform:
   - {fileID: 1100675667}
   - {fileID: 1990097188}
   m_Father: {fileID: 0}
-  m_RootOrder: 9
+  m_RootOrder: 7
 --- !u!1 &1218959427
 GameObject:
   m_ObjectHideFlags: 0
@@ -3873,7 +4047,7 @@ Transform:
   - {fileID: 1864885588}
   - {fileID: 109705178}
   m_Father: {fileID: 175764186}
-  m_RootOrder: 7
+  m_RootOrder: 11
 --- !u!50 &1218959429
 Rigidbody2D:
   m_ObjectHideFlags: 0
@@ -3904,7 +4078,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: .949999988
   acceleration: .000500000024
-  player: {fileID: 0}
+  followPlayerEverywhere: 1
+  player: {fileID: 1462744273}
   moveForce: 2
   leapForce: 50
 --- !u!212 &1218959431
@@ -4054,7 +4229,6 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 1267239221}
-  - 114: {fileID: 1267239223}
   - 58: {fileID: 1267239222}
   m_Layer: 12
   m_Name: HitCircle
@@ -4084,23 +4258,9 @@ CircleCollider2D:
   m_GameObject: {fileID: 1267239220}
   m_Enabled: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_Radius: .5
   m_Center: {x: 0, y: -.100000001}
---- !u!114 &1267239223
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 11400000, guid: 76c199c1d161bd54aa705fd225a5fac7,
-    type: 2}
-  m_PrefabInternal: {fileID: 108339174}
-  m_GameObject: {fileID: 1267239220}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 64849406af35a5841b5a16c97c8a713f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  tag: Player
-  level: 
 --- !u!1 &1316709175
 GameObject:
   m_ObjectHideFlags: 0
@@ -4149,7 +4309,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: .949999988
   acceleration: .000500000024
-  player: {fileID: 0}
+  followPlayerEverywhere: 1
+  player: {fileID: 1462744273}
   moveForce: 2
   leapForce: 50
 --- !u!212 &1316709178
@@ -4188,7 +4349,7 @@ Transform:
   - {fileID: 1593785096}
   - {fileID: 1267239221}
   m_Father: {fileID: 175764186}
-  m_RootOrder: 5
+  m_RootOrder: 9
 --- !u!1 &1377386516
 GameObject:
   m_ObjectHideFlags: 0
@@ -4270,7 +4431,7 @@ Transform:
   - {fileID: 385962368}
   - {fileID: 1625284404}
   m_Father: {fileID: 175764186}
-  m_RootOrder: 6
+  m_RootOrder: 10
 --- !u!50 &1437659429
 Rigidbody2D:
   m_ObjectHideFlags: 0
@@ -4301,7 +4462,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: .949999988
   acceleration: .000500000024
-  player: {fileID: 0}
+  followPlayerEverywhere: 1
+  player: {fileID: 1462744273}
   moveForce: 2
   leapForce: 50
 --- !u!212 &1437659431
@@ -4340,7 +4502,7 @@ GameObject:
   - 114: {fileID: 1462744277}
   - 58: {fileID: 1462744278}
   m_Layer: 9
-  m_Name: PlayerTest
+  m_Name: Main Player
   m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4377,9 +4539,10 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: .03887688, w: -.999244034}
   m_LocalPosition: {x: 1.31470966, y: 1.48968053, z: 0}
   m_LocalScale: {x: .349999994, y: .349999994, z: 1}
-  m_Children: []
+  m_Children:
+  - {fileID: 1020002768}
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: 4
 --- !u!50 &1462744276
 Rigidbody2D:
   m_ObjectHideFlags: 0
@@ -4530,6 +4693,46 @@ SpriteRenderer:
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 8ddfff17eac7c664896653751aa8e26a, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
+--- !u!1 &1483025688
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 1483025690}
+  - 68: {fileID: 1483025689}
+  m_Layer: 0
+  m_Name: BottomWall
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!68 &1483025689
+EdgeCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1483025688}
+  m_Enabled: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Points:
+  - {x: -.5, y: 0}
+  - {x: -.479007602, y: .89178896}
+--- !u!4 &1483025690
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1483025688}
+  m_LocalRotation: {x: 0, y: 0, z: .707106829, w: .707106829}
+  m_LocalPosition: {x: 10.3976402, y: -2.97571564, z: 0}
+  m_LocalScale: {x: 0, y: 20, z: 0}
+  m_Children: []
+  m_Father: {fileID: 1544369310}
+  m_RootOrder: 2
 --- !u!1 &1497482055
 GameObject:
   m_ObjectHideFlags: 0
@@ -4538,7 +4741,6 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 1497482058}
-  - 114: {fileID: 1497482057}
   - 58: {fileID: 1497482056}
   m_Layer: 12
   m_Name: HitCircle
@@ -4556,23 +4758,9 @@ CircleCollider2D:
   m_GameObject: {fileID: 1497482055}
   m_Enabled: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_Radius: .5
   m_Center: {x: 0, y: -.100000001}
---- !u!114 &1497482057
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 11400000, guid: 76c199c1d161bd54aa705fd225a5fac7,
-    type: 2}
-  m_PrefabInternal: {fileID: 956967394}
-  m_GameObject: {fileID: 1497482055}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 64849406af35a5841b5a16c97c8a713f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  tag: Player
-  level: 
 --- !u!4 &1497482058
 Transform:
   m_ObjectHideFlags: 0
@@ -4693,6 +4881,36 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1186257667}
   m_RootOrder: 18
+--- !u!1 &1544369309
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 1544369310}
+  m_Layer: 0
+  m_Name: Limits
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1544369310
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1544369309}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -1.62704253, y: -1.53821409, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 1859664252}
+  - {fileID: 2042038243}
+  - {fileID: 1483025690}
+  m_Father: {fileID: 0}
+  m_RootOrder: 10
 --- !u!1 &1593785095
 GameObject:
   m_ObjectHideFlags: 0
@@ -4759,7 +4977,6 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 1625284404}
-  - 114: {fileID: 1625284403}
   - 58: {fileID: 1625284402}
   m_Layer: 12
   m_Name: HitCircle
@@ -4777,23 +4994,9 @@ CircleCollider2D:
   m_GameObject: {fileID: 1625284401}
   m_Enabled: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_Radius: .5
   m_Center: {x: 0, y: -.100000001}
---- !u!114 &1625284403
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 11400000, guid: 4f86c8bcbd836324da844d309912a821,
-    type: 2}
-  m_PrefabInternal: {fileID: 1710377838}
-  m_GameObject: {fileID: 1625284401}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 64849406af35a5841b5a16c97c8a713f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  tag: Player
-  level: 
 --- !u!4 &1625284404
 Transform:
   m_ObjectHideFlags: 0
@@ -5047,9 +5250,22 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400004, guid: 4f86c8bcbd836324da844d309912a821, type: 2}
       propertyPath: m_RootOrder
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 5800000, guid: 4f86c8bcbd836324da844d309912a821, type: 2}
+      propertyPath: m_IsTrigger
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400004, guid: 4f86c8bcbd836324da844d309912a821, type: 2}
+      propertyPath: followPlayerEverywhere
       value: 1
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    - target: {fileID: 11400004, guid: 4f86c8bcbd836324da844d309912a821, type: 2}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 1462744273}
+    m_RemovedComponents:
+    - {fileID: 0}
   m_ParentPrefab: {fileID: 100100000, guid: 4f86c8bcbd836324da844d309912a821, type: 2}
   m_RootGameObject: {fileID: 1437659427}
   m_IsPrefabParent: 0
@@ -5062,7 +5278,6 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 1743034024}
-  - 114: {fileID: 1743034026}
   - 58: {fileID: 1743034025}
   m_Layer: 12
   m_Name: HitCircle
@@ -5092,23 +5307,9 @@ CircleCollider2D:
   m_GameObject: {fileID: 1743034023}
   m_Enabled: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_Radius: .5
   m_Center: {x: 0, y: -.100000001}
---- !u!114 &1743034026
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 11400000, guid: 76c199c1d161bd54aa705fd225a5fac7,
-    type: 2}
-  m_PrefabInternal: {fileID: 1860889661}
-  m_GameObject: {fileID: 1743034023}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 64849406af35a5841b5a16c97c8a713f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  tag: Player
-  level: 
 --- !u!1 &1799652442
 GameObject:
   m_ObjectHideFlags: 0
@@ -5150,7 +5351,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 8
+  m_RootOrder: 6
 --- !u!61 &1799652445
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -5197,11 +5398,11 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1859664250}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -.429983199, y: -4.61911345, z: 0}
+  m_LocalPosition: {x: 1.19705939, y: -3.08089924, z: 0}
   m_LocalScale: {x: 8.2229414, y: 140.870697, z: 2.06218195}
   m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_Father: {fileID: 1544369310}
+  m_RootOrder: 0
 --- !u!1001 &1860889661
 Prefab:
   m_ObjectHideFlags: 0
@@ -5243,8 +5444,20 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400004, guid: 76c199c1d161bd54aa705fd225a5fac7, type: 2}
       propertyPath: m_RootOrder
-      value: 6
+      value: 11
       objectReference: {fileID: 0}
+    - target: {fileID: 5800000, guid: 76c199c1d161bd54aa705fd225a5fac7, type: 2}
+      propertyPath: m_IsTrigger
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400004, guid: 76c199c1d161bd54aa705fd225a5fac7, type: 2}
+      propertyPath: followPlayerEverywhere
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400004, guid: 76c199c1d161bd54aa705fd225a5fac7, type: 2}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 1462744273}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 76c199c1d161bd54aa705fd225a5fac7, type: 2}
   m_RootGameObject: {fileID: 978878783}
@@ -5366,7 +5579,6 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 1875501089}
-  - 114: {fileID: 1875501091}
   - 58: {fileID: 1875501090}
   m_Layer: 12
   m_Name: HitCircle
@@ -5396,23 +5608,9 @@ CircleCollider2D:
   m_GameObject: {fileID: 1875501088}
   m_Enabled: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_Radius: .5
   m_Center: {x: 0, y: -.100000001}
---- !u!114 &1875501091
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 11400000, guid: 76c199c1d161bd54aa705fd225a5fac7,
-    type: 2}
-  m_PrefabInternal: {fileID: 419905895}
-  m_GameObject: {fileID: 1875501088}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 64849406af35a5841b5a16c97c8a713f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  tag: Player
-  level: 
 --- !u!1 &1904978368
 GameObject:
   m_ObjectHideFlags: 0
@@ -5421,7 +5619,6 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 1904978369}
-  - 114: {fileID: 1904978371}
   - 58: {fileID: 1904978370}
   m_Layer: 12
   m_Name: HitCircle
@@ -5451,23 +5648,9 @@ CircleCollider2D:
   m_GameObject: {fileID: 1904978368}
   m_Enabled: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_Radius: .5
   m_Center: {x: 0, y: -.100000001}
---- !u!114 &1904978371
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 11400000, guid: 76c199c1d161bd54aa705fd225a5fac7,
-    type: 2}
-  m_PrefabInternal: {fileID: 479923128}
-  m_GameObject: {fileID: 1904978368}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 64849406af35a5841b5a16c97c8a713f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  tag: Player
-  level: 
 --- !u!1 &1922844024
 GameObject:
   m_ObjectHideFlags: 0
@@ -5476,7 +5659,6 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 1922844025}
-  - 114: {fileID: 1922844027}
   - 58: {fileID: 1922844026}
   m_Layer: 12
   m_Name: HitCircle
@@ -5506,23 +5688,9 @@ CircleCollider2D:
   m_GameObject: {fileID: 1922844024}
   m_Enabled: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_Radius: .5
   m_Center: {x: 0, y: -.100000001}
---- !u!114 &1922844027
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 11400000, guid: 76c199c1d161bd54aa705fd225a5fac7,
-    type: 2}
-  m_PrefabInternal: {fileID: 112792353}
-  m_GameObject: {fileID: 1922844024}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 64849406af35a5841b5a16c97c8a713f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  tag: Player
-  level: 
 --- !u!1 &1965139488
 GameObject:
   m_ObjectHideFlags: 0
@@ -5685,11 +5853,11 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 2042038241}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 8.6394434, y: -4.98609257, z: 0}
+  m_LocalPosition: {x: 10.2664862, y: -3.44787836, z: 0}
   m_LocalScale: {x: 8.2229414, y: 140.870697, z: 2.06218195}
   m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_Father: {fileID: 1544369310}
+  m_RootOrder: 1
 --- !u!1 &2069855995
 GameObject:
   m_ObjectHideFlags: 0

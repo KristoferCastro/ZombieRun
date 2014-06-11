@@ -8,14 +8,15 @@ public class OnCollisionLoadLevel : MonoBehaviour {
 	
 	void OnTriggerEnter2D(Collider2D other)
 	{
-		if (gameObject.tag == "ZombieFromHorde"){
-			if (other.gameObject.tag == tag){
-				// make it so it collides with player again!
-				gameObject.collider2D.isTrigger = false;
-				Debug.Log ("hitting the player son!");
-				// do stuff when collided
-			}
-		}
+
+	if (other.gameObject.tag == tag){
+		// make it so it collides with player again!
+		gameObject.collider2D.isTrigger = false;
+		Debug.Log ("hitting the player son!");
+		// do stuff when collided
+		Application.LoadLevel(level);
+	}
+
 		
 		/**
 		if (other.transform.root.CompareTag("Player"))

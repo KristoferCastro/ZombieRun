@@ -16,6 +16,7 @@ public class ZombieAI : MonoBehaviour {
 
 	public float speed = 0.95f;
 	public float acceleration = 0.0005f;
+	public bool followPlayerEverywhere = false;
 	
 	
 	SearchRadar searchRadar;
@@ -58,7 +59,7 @@ public class ZombieAI : MonoBehaviour {
 		//speed += acceleration;
 		//rigidbody2D.velocity = new Vector2(0, speed);
 				
-		if (searchRadar.FoundPlayer){
+		if (searchRadar.FoundPlayer || followPlayerEverywhere){
 			LookAt (player);
 			
 			if (!leaping){
