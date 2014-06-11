@@ -50,6 +50,10 @@ public class PushingZombie : ZombieAI {
 			// player can't move
 			other.gameObject.GetComponent<PlayerController>().enabled = false;			
 		}
+		
+		if (other.gameObject.tag == GameObjectIDS.ZOMBIE_FROM_HORDE_TAG){
+			fading = true;
+		}
 	}
 	
 	

@@ -15,6 +15,7 @@ public static class GameObjectIDS{
 	public static string HORIZONTAL_SPAWNER_START = "HorizontalSpawnStartPosition";
 	public static string HORIZONTAL_SPAWNER_END = "HorizontalSpawnEndPosition";
 
+	public static string ZOMBIE_FROM_HORDE_TAG = "ZombieFromHorde";
 	public static string LEVEL_MANAGER = "LevelManager";
 	public static string POWER_UP_MANAGER = "PowerUpManager";
 	public static String POWER_UP_SPEED = "speedpowerup";
