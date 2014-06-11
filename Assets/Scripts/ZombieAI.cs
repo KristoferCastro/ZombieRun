@@ -14,13 +14,12 @@ using System.Collections;
 /// </summary>
 public class ZombieAI : MonoBehaviour {
 
-	public float speed = 0.5f;
+	public float speed = 0.95f;
 	public float acceleration = 0.0005f;
 	
 	
 	SearchRadar searchRadar;
-	GameObject player;
-	
+	public GameObject player;	
 	protected Quaternion originalRotation;
 	
 	public float moveForce = 2f;
@@ -50,7 +49,8 @@ public class ZombieAI : MonoBehaviour {
 	}
 	
 	void InitializeReferences(){
-		player = GameObject.Find(GameObjectIDS.PLAYER);
+		if ( player == null )
+			player = GameObject.Find(GameObjectIDS.PLAYER);
 		searchRadar = gameObject.GetComponentInChildren<SearchRadar>();
 	}
 	

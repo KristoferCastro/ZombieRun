@@ -6,6 +6,7 @@ public class Progress : MonoBehaviour {
 	public Transform startPoint;
 	public Transform endPoint;
 	public Transform player;
+	public GameObject[] zombieHorde;
 	
 	float progress = 0f;
 	float totalDistance;

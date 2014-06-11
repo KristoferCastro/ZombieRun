@@ -125,7 +125,7 @@ Rigidbody2D:
     type: 2}
   m_PrefabInternal: {fileID: 1262051919}
   m_GameObject: {fileID: 49507525}
-  m_Mass: 1
+  m_Mass: 2
   m_LinearDrag: 1
   m_AngularDrag: .0500000007
   m_GravityScale: 0
@@ -146,9 +146,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 93294d04bfb5c464d921f02ba67a5ef3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: .5
+  speed: .949999988
   acceleration: .000500000024
-  moveForce: 10
+  player: {fileID: 0}
+  moveForce: 2
   leapForce: 50
 --- !u!212 &49507530
 SpriteRenderer:
@@ -450,9 +451,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 93294d04bfb5c464d921f02ba67a5ef3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: .5
+  speed: .949999988
   acceleration: .000500000024
-  moveForce: 10
+  player: {fileID: 0}
+  moveForce: 2
   leapForce: 50
 --- !u!1001 &665977717
 Prefab:
@@ -496,6 +498,14 @@ Prefab:
     - target: {fileID: 400002, guid: 76c199c1d161bd54aa705fd225a5fac7, type: 2}
       propertyPath: m_RootOrder
       value: 18
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: 76c199c1d161bd54aa705fd225a5fac7, type: 2}
+      propertyPath: speed
+      value: .949999988
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: 76c199c1d161bd54aa705fd225a5fac7, type: 2}
+      propertyPath: moveForce
+      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 76c199c1d161bd54aa705fd225a5fac7, type: 2}
@@ -602,6 +612,14 @@ Prefab:
     - target: {fileID: 400002, guid: 76c199c1d161bd54aa705fd225a5fac7, type: 2}
       propertyPath: m_RootOrder
       value: 17
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: 76c199c1d161bd54aa705fd225a5fac7, type: 2}
+      propertyPath: speed
+      value: .949999988
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: 76c199c1d161bd54aa705fd225a5fac7, type: 2}
+      propertyPath: moveForce
+      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 76c199c1d161bd54aa705fd225a5fac7, type: 2}
@@ -790,6 +808,14 @@ Prefab:
       propertyPath: m_RootOrder
       value: 15
       objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: 76c199c1d161bd54aa705fd225a5fac7, type: 2}
+      propertyPath: speed
+      value: .949999988
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: 76c199c1d161bd54aa705fd225a5fac7, type: 2}
+      propertyPath: moveForce
+      value: 2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 76c199c1d161bd54aa705fd225a5fac7, type: 2}
   m_RootGameObject: {fileID: 2032097808}
@@ -833,7 +859,7 @@ Rigidbody2D:
     type: 2}
   m_PrefabInternal: {fileID: 705149718}
   m_GameObject: {fileID: 1164795962}
-  m_Mass: 1
+  m_Mass: 2
   m_LinearDrag: 1
   m_AngularDrag: .0500000007
   m_GravityScale: 0
@@ -854,9 +880,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 93294d04bfb5c464d921f02ba67a5ef3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: .5
+  speed: .949999988
   acceleration: .000500000024
-  moveForce: 10
+  player: {fileID: 0}
+  moveForce: 2
   leapForce: 50
 --- !u!212 &1164795966
 SpriteRenderer:
@@ -924,6 +951,13 @@ MonoBehaviour:
   startPoint: {fileID: 2069855996}
   endPoint: {fileID: 2026789226}
   player: {fileID: 1462744275}
+  zombieHorde:
+  - {fileID: 1923119692}
+  - {fileID: 2032097808}
+  - {fileID: 49507525}
+  - {fileID: 1164795962}
+  - {fileID: 1902748923}
+  - {fileID: 1360285628}
 --- !u!4 &1177926152
 Transform:
   m_ObjectHideFlags: 0
@@ -1039,6 +1073,14 @@ Prefab:
       propertyPath: m_RootOrder
       value: 16
       objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: 76c199c1d161bd54aa705fd225a5fac7, type: 2}
+      propertyPath: speed
+      value: .949999988
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: 76c199c1d161bd54aa705fd225a5fac7, type: 2}
+      propertyPath: moveForce
+      value: 2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 76c199c1d161bd54aa705fd225a5fac7, type: 2}
   m_RootGameObject: {fileID: 49507525}
@@ -1132,7 +1174,7 @@ Rigidbody2D:
     type: 2}
   m_PrefabInternal: {fileID: 1834753153}
   m_GameObject: {fileID: 1360285628}
-  m_Mass: 1
+  m_Mass: 2
   m_LinearDrag: 1
   m_AngularDrag: .0500000007
   m_GravityScale: 0
@@ -1153,9 +1195,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 93294d04bfb5c464d921f02ba67a5ef3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: .5
+  speed: .949999988
   acceleration: .000500000024
-  moveForce: 10
+  player: {fileID: 0}
+  moveForce: 2
   leapForce: 50
 --- !u!212 &1360285632
 SpriteRenderer:
@@ -1495,7 +1538,15 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400002, guid: 76c199c1d161bd54aa705fd225a5fac7, type: 2}
       propertyPath: m_RootOrder
-      value: 13
+      value: 14
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: 76c199c1d161bd54aa705fd225a5fac7, type: 2}
+      propertyPath: speed
+      value: .949999988
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: 76c199c1d161bd54aa705fd225a5fac7, type: 2}
+      propertyPath: moveForce
+      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 76c199c1d161bd54aa705fd225a5fac7, type: 2}
@@ -1659,7 +1710,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 14
+  m_RootOrder: 13
 --- !u!61 &1799652445
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1713,6 +1764,14 @@ Prefab:
     - target: {fileID: 400002, guid: 76c199c1d161bd54aa705fd225a5fac7, type: 2}
       propertyPath: m_RootOrder
       value: 19
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: 76c199c1d161bd54aa705fd225a5fac7, type: 2}
+      propertyPath: speed
+      value: .949999988
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: 76c199c1d161bd54aa705fd225a5fac7, type: 2}
+      propertyPath: moveForce
+      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 76c199c1d161bd54aa705fd225a5fac7, type: 2}
@@ -1797,7 +1856,7 @@ Rigidbody2D:
     type: 2}
   m_PrefabInternal: {fileID: 665977717}
   m_GameObject: {fileID: 1902748923}
-  m_Mass: 1
+  m_Mass: 2
   m_LinearDrag: 1
   m_AngularDrag: .0500000007
   m_GravityScale: 0
@@ -1818,9 +1877,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 93294d04bfb5c464d921f02ba67a5ef3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: .5
+  speed: .949999988
   acceleration: .000500000024
-  moveForce: 10
+  player: {fileID: 0}
+  moveForce: 2
   leapForce: 50
 --- !u!212 &1902748927
 SpriteRenderer:
@@ -1896,7 +1956,7 @@ Rigidbody2D:
     type: 2}
   m_PrefabInternal: {fileID: 1615419027}
   m_GameObject: {fileID: 1923119692}
-  m_Mass: 1
+  m_Mass: 2
   m_LinearDrag: 1
   m_AngularDrag: .0500000007
   m_GravityScale: 0
@@ -1952,7 +2012,7 @@ Transform:
   m_Children:
   - {fileID: 583918755}
   m_Father: {fileID: 0}
-  m_RootOrder: 13
+  m_RootOrder: 14
 --- !u!1 &2005098502
 GameObject:
   m_ObjectHideFlags: 0
@@ -2131,7 +2191,7 @@ Rigidbody2D:
     type: 2}
   m_PrefabInternal: {fileID: 1130828259}
   m_GameObject: {fileID: 2032097808}
-  m_Mass: 1
+  m_Mass: 2
   m_LinearDrag: 1
   m_AngularDrag: .0500000007
   m_GravityScale: 0
@@ -2152,9 +2212,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 93294d04bfb5c464d921f02ba67a5ef3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: .5
+  speed: .949999988
   acceleration: .000500000024
-  moveForce: 10
+  player: {fileID: 0}
+  moveForce: 2
   leapForce: 50
 --- !u!212 &2032097813
 SpriteRenderer:
