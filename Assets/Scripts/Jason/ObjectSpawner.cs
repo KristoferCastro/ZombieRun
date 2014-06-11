@@ -14,6 +14,8 @@ public class ObjectSpawner : MonoBehaviour {
 	public bool TopOnly = true;
 	public GameObject spawnerStart;
 	public GameObject spawnerEnd;
+	public float startDelay = 0f;
+	public float repeatDelay = 2.5f;
 	
 	// variables that make the spawning work
 	// They spawn in the edges of a imaginary spawn circle
@@ -31,11 +33,12 @@ public class ObjectSpawner : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
 		if (TopOnly) {
-			InvokeRepeating ("SpawnObjectTopOnly", 1f, 2.5f);
-		} else InvokeRepeating ("SpawnObjectAroundCircle", 1f, 2.5f);				
+			InvokeRepeating ("SpawnObjectTopOnly", startDelay, repeatDelay);
+		} else InvokeRepeating ("SpawnObjectAroundCircle", startDelay, repeatDelay);				
 		spawnRadius = gameObject.GetComponent<CircleCollider2D>().radius;
-		transform.position = new Vector3(spawnerLocationX, player.transform.position.y + spawnRadius/2, 0);
-		spawnerStart.transform.position = new Vector3(spawnerStart.transform.position.x + spawnerSize, spawnerStart.transform.position.y, 0);
+		transform.position = new Vector3(spawnerLocationX, player.transform.position.y + spawnerLocationY, 0);
+		spawnerStart.transform.position = new Vector3(spawnerStart.transform.position.x - spawnerSize, spawnerStart.transform.position.y, 0);
+		spawnerEnd.transform.position = new Vector3(spawnerEnd.transform.position.x + spawnerSize, spawnerEnd.transform.position.y, 0);
 	}
 	
 	// Update is called once per frame
@@ -45,7 +48,7 @@ public class ObjectSpawner : MonoBehaviour {
 	}
 	
 	void AdjustPosition(){
-		transform.position = new Vector3(transform.position.x, player.transform.position.y + spawnRadius/2, 0);
+		transform.position = new Vector3(transform.position.x, player.transform.position.y + spawnerLocationY, 0);
 	}
 	
 	void OnTriggerExit2D(Collider2D other){
