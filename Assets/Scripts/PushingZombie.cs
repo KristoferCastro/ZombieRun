@@ -42,11 +42,13 @@ public class PushingZombie : ZombieAI {
 	void OnCollisionEnter2D(Collision2D other){
 		if (other.gameObject.name == GameObjectIDS.PLAYER){			
 			other.gameObject.rigidbody2D.AddForce(Vector3.down * pushforce);	
-			fading = true;	
+			if (!fading){
+				this.gameObject.audio.Play();
+			}
+			fading = true;
 			
 			// player can't move
-			other.gameObject.GetComponent<PlayerController>().enabled = false;
-			
+			other.gameObject.GetComponent<PlayerController>().enabled = false;			
 		}
 	}
 	
