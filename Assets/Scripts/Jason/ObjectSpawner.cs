@@ -8,7 +8,12 @@ public class ObjectSpawner : MonoBehaviour {
 	
 	public GameObject obj;
 	public GameObject player;
-	public float displacement;
+	public float spawnerLocationX = 0;
+	public float spawnerLocationY = 0;
+	public float spawnerSize = 2;
+	public bool TopOnly = true;
+	public GameObject spawnerStart;
+	public GameObject spawnerEnd;
 	
 	// variables that make the spawning work
 	// They spawn in the edges of a imaginary spawn circle
@@ -20,16 +25,17 @@ public class ObjectSpawner : MonoBehaviour {
 	float randomAngle;
 	float x;
 	float y;
-	public GameObject horizontalSpawnerStart;
-	public GameObject horizontalSpawnerEnd;
+
 	
 	
 	// Use this for initialization
 	void Start () {
-		InvokeRepeating ("SpawnObjectTopOnly", 1f, 2.5f);		
-		spawnRadius = gameObject.GetComponent<CircleCollider2D>().radius + 10;
-		transform.position = new Vector3(displacement, player.transform.position.y + spawnRadius/2, 0);
-
+		if (TopOnly) {
+			InvokeRepeating ("SpawnObjectTopOnly", 1f, 2.5f);
+		} else InvokeRepeating ("SpawnObjectAroundCircle", 1f, 2.5f);				
+		spawnRadius = gameObject.GetComponent<CircleCollider2D>().radius;
+		transform.position = new Vector3(spawnerLocationX, player.transform.position.y + spawnRadius/2, 0);
+		spawnerStart.transform.position = new Vector3(spawnerStart.transform.position.x + spawnerSize, spawnerStart.transform.position.y, 0);
 	}
 	
 	// Update is called once per frame
@@ -52,15 +58,12 @@ public class ObjectSpawner : MonoBehaviour {
 		randomAngle = Random.Range(angleMin, angleMax)*Mathf.Deg2Rad;
 		x = spawnRadius * Mathf.Cos (randomAngle);
 		y = spawnRadius * Mathf.Sin (randomAngle);
-		Instantiate (obj, new Vector3(x, y, 0) + transform.position,
-		             Quaternion.identity);
+		Instantiate (obj, new Vector3(x, y, 0) + transform.position, Quaternion.identity);
 	}
-	
-	// Zombies only pop up from the top
+
 	void SpawnObjectTopOnly(){
-		Instantiate(obj, new Vector3( 
-		                                Random.Range(horizontalSpawnerStart.transform.position.x, horizontalSpawnerEnd.transform.position.x),
-		                                transform.position.y, 0), Quaternion.identity);
+		Instantiate(obj,new Vector3(Random.Range(spawnerStart.transform.position.x, spawnerEnd.transform.position.x),
+		                       		transform.position.y, 0), Quaternion.identity);
 	}
 	
 	/// <summary>
