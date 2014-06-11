@@ -816,6 +816,10 @@ Prefab:
       propertyPath: moveForce
       value: 2
       objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: 76c199c1d161bd54aa705fd225a5fac7, type: 2}
+      propertyPath: leapForce
+      value: 200
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 76c199c1d161bd54aa705fd225a5fac7, type: 2}
   m_RootGameObject: {fileID: 2032097808}
@@ -2216,7 +2220,7 @@ MonoBehaviour:
   acceleration: .000500000024
   player: {fileID: 0}
   moveForce: 2
-  leapForce: 50
+  leapForce: 200
 --- !u!212 &2032097813
 SpriteRenderer:
   m_ObjectHideFlags: 0
