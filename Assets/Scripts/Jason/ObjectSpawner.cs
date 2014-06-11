@@ -37,8 +37,8 @@ public class ObjectSpawner : MonoBehaviour {
 		} else InvokeRepeating ("SpawnObjectAroundCircle", startDelay, repeatDelay);				
 		spawnRadius = gameObject.GetComponent<CircleCollider2D>().radius;
 		transform.position = new Vector3(spawnerLocationX, player.transform.position.y + spawnerLocationY, 0);
-		spawnerStart.transform.position = new Vector3(spawnerStart.transform.position.x - spawnerSize, spawnerStart.transform.position.y, 0);
-		spawnerEnd.transform.position = new Vector3(spawnerEnd.transform.position.x + spawnerSize, spawnerEnd.transform.position.y, 0);
+		spawnerStart.transform.position = new Vector3(transform.position.x - spawnerSize, transform.position.y, 0);
+		spawnerEnd.transform.position = new Vector3(transform.position.x + spawnerSize, transform.position.y, 0);
 	}
 	
 	// Update is called once per frame
@@ -53,7 +53,7 @@ public class ObjectSpawner : MonoBehaviour {
 	
 	void OnTriggerExit2D(Collider2D other){
 		if (other.name == obj.name){
-			DestroyObject (other.gameObject);
+			DestroyObject(other.gameObject);
 		}
 	}
 	
