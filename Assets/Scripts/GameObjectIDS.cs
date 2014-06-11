@@ -19,6 +19,7 @@ public static class GameObjectIDS{
 	public static string POWER_UP_MANAGER = "PowerUpManager";
 	public static String POWER_UP_SPEED = "speedpowerup";
 	
+	public static string PROGRESS_MANAGER = "Progress";
 	public static string PROGRESS_HUD_START = "ProgressHUD Start";
 	public static string PROGRESS_HUD_END = "ProgressHUD End";
 	public static string PROGRESS_PLAYER_ICON = "gui-progress-icon2";
