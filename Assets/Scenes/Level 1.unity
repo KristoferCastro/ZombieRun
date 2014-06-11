@@ -87,7 +87,7 @@ GameObject:
   - 50: {fileID: 49507528}
   - 58: {fileID: 49507527}
   m_Layer: 12
-  m_Name: ZombieTest
+  m_Name: Charles
   m_TagString: ZombieFromHorde
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -100,12 +100,12 @@ Transform:
   m_PrefabInternal: {fileID: 1262051919}
   m_GameObject: {fileID: 49507525}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1.60450006, y: -4.0653882, z: 0}
+  m_LocalPosition: {x: -.280930161, y: -3.63433361, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1713466405}
-  m_Father: {fileID: 0}
-  m_RootOrder: 16
+  m_Father: {fileID: 2109677104}
+  m_RootOrder: 2
 --- !u!58 &49507527
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -459,15 +459,15 @@ Prefab:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    m_TransformParent: {fileID: 0}
+    m_TransformParent: {fileID: 2109677104}
     m_Modifications:
     - target: {fileID: 400002, guid: 76c199c1d161bd54aa705fd225a5fac7, type: 2}
       propertyPath: m_LocalPosition.x
-      value: 3.20196128
+      value: 1.29294956
       objectReference: {fileID: 0}
     - target: {fileID: 400002, guid: 76c199c1d161bd54aa705fd225a5fac7, type: 2}
       propertyPath: m_LocalPosition.y
-      value: -4.03634357
+      value: -3.60528898
       objectReference: {fileID: 0}
     - target: {fileID: 400002, guid: 76c199c1d161bd54aa705fd225a5fac7, type: 2}
       propertyPath: m_LocalPosition.z
@@ -495,7 +495,11 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400002, guid: 76c199c1d161bd54aa705fd225a5fac7, type: 2}
       propertyPath: m_RootOrder
-      value: 18
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 100002, guid: 76c199c1d161bd54aa705fd225a5fac7, type: 2}
+      propertyPath: m_Name
+      value: Annie
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 76c199c1d161bd54aa705fd225a5fac7, type: 2}
@@ -565,15 +569,15 @@ Prefab:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    m_TransformParent: {fileID: 0}
+    m_TransformParent: {fileID: 2109677104}
     m_Modifications:
     - target: {fileID: 400002, guid: 76c199c1d161bd54aa705fd225a5fac7, type: 2}
       propertyPath: m_LocalPosition.x
-      value: 2.35966349
+      value: .47423327
       objectReference: {fileID: 0}
     - target: {fileID: 400002, guid: 76c199c1d161bd54aa705fd225a5fac7, type: 2}
       propertyPath: m_LocalPosition.y
-      value: -4.12347746
+      value: -3.69242287
       objectReference: {fileID: 0}
     - target: {fileID: 400002, guid: 76c199c1d161bd54aa705fd225a5fac7, type: 2}
       propertyPath: m_LocalPosition.z
@@ -601,7 +605,11 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400002, guid: 76c199c1d161bd54aa705fd225a5fac7, type: 2}
       propertyPath: m_RootOrder
-      value: 17
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 100002, guid: 76c199c1d161bd54aa705fd225a5fac7, type: 2}
+      propertyPath: m_Name
+      value: Bob
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 76c199c1d161bd54aa705fd225a5fac7, type: 2}
@@ -752,15 +760,15 @@ Prefab:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    m_TransformParent: {fileID: 0}
+    m_TransformParent: {fileID: 2109677104}
     m_Modifications:
     - target: {fileID: 400002, guid: 76c199c1d161bd54aa705fd225a5fac7, type: 2}
       propertyPath: m_LocalPosition.x
-      value: .704112649
+      value: -1.20489907
       objectReference: {fileID: 0}
     - target: {fileID: 400002, guid: 76c199c1d161bd54aa705fd225a5fac7, type: 2}
       propertyPath: m_LocalPosition.y
-      value: -4.0653882
+      value: -3.63433361
       objectReference: {fileID: 0}
     - target: {fileID: 400002, guid: 76c199c1d161bd54aa705fd225a5fac7, type: 2}
       propertyPath: m_LocalPosition.z
@@ -788,7 +796,11 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400002, guid: 76c199c1d161bd54aa705fd225a5fac7, type: 2}
       propertyPath: m_RootOrder
-      value: 15
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 100002, guid: 76c199c1d161bd54aa705fd225a5fac7, type: 2}
+      propertyPath: m_Name
+      value: Diana
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 76c199c1d161bd54aa705fd225a5fac7, type: 2}
@@ -808,7 +820,7 @@ GameObject:
   - 50: {fileID: 1164795964}
   - 58: {fileID: 1164795963}
   m_Layer: 12
-  m_Name: ZombieTest
+  m_Name: Bob
   m_TagString: ZombieFromHorde
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -888,12 +900,12 @@ Transform:
   m_PrefabInternal: {fileID: 705149718}
   m_GameObject: {fileID: 1164795962}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 2.35966349, y: -4.12347746, z: 0}
+  m_LocalPosition: {x: .47423327, y: -3.69242287, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1620280499}
-  m_Father: {fileID: 0}
-  m_RootOrder: 17
+  m_Father: {fileID: 2109677104}
+  m_RootOrder: 1
 --- !u!1 &1177926150
 GameObject:
   m_ObjectHideFlags: 0
@@ -1001,15 +1013,15 @@ Prefab:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    m_TransformParent: {fileID: 0}
+    m_TransformParent: {fileID: 2109677104}
     m_Modifications:
     - target: {fileID: 400002, guid: 76c199c1d161bd54aa705fd225a5fac7, type: 2}
       propertyPath: m_LocalPosition.x
-      value: 1.60450006
+      value: -.280930161
       objectReference: {fileID: 0}
     - target: {fileID: 400002, guid: 76c199c1d161bd54aa705fd225a5fac7, type: 2}
       propertyPath: m_LocalPosition.y
-      value: -4.0653882
+      value: -3.63433361
       objectReference: {fileID: 0}
     - target: {fileID: 400002, guid: 76c199c1d161bd54aa705fd225a5fac7, type: 2}
       propertyPath: m_LocalPosition.z
@@ -1037,7 +1049,11 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400002, guid: 76c199c1d161bd54aa705fd225a5fac7, type: 2}
       propertyPath: m_RootOrder
-      value: 16
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 100002, guid: 76c199c1d161bd54aa705fd225a5fac7, type: 2}
+      propertyPath: m_Name
+      value: Charles
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 76c199c1d161bd54aa705fd225a5fac7, type: 2}
@@ -1107,7 +1123,7 @@ GameObject:
   - 50: {fileID: 1360285630}
   - 58: {fileID: 1360285629}
   m_Layer: 12
-  m_Name: ZombieTest
+  m_Name: Frank
   m_TagString: ZombieFromHorde
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1187,12 +1203,12 @@ Transform:
   m_PrefabInternal: {fileID: 1834753153}
   m_GameObject: {fileID: 1360285628}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -.951437712, y: -4.09443331, z: 0}
+  m_LocalPosition: {x: -2.86044931, y: -3.66337872, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1253223030}
-  m_Father: {fileID: 0}
-  m_RootOrder: 19
+  m_Father: {fileID: 2109677104}
+  m_RootOrder: 5
 --- !u!1 &1371501771
 GameObject:
   m_ObjectHideFlags: 0
@@ -1459,15 +1475,15 @@ Prefab:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    m_TransformParent: {fileID: 0}
+    m_TransformParent: {fileID: 2109677104}
     m_Modifications:
     - target: {fileID: 400002, guid: 76c199c1d161bd54aa705fd225a5fac7, type: 2}
       propertyPath: m_LocalPosition.x
-      value: -.19627437
+      value: -2.10528612
       objectReference: {fileID: 0}
     - target: {fileID: 400002, guid: 76c199c1d161bd54aa705fd225a5fac7, type: 2}
       propertyPath: m_LocalPosition.y
-      value: -4.09443331
+      value: -3.66337872
       objectReference: {fileID: 0}
     - target: {fileID: 400002, guid: 76c199c1d161bd54aa705fd225a5fac7, type: 2}
       propertyPath: m_LocalPosition.z
@@ -1495,7 +1511,11 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400002, guid: 76c199c1d161bd54aa705fd225a5fac7, type: 2}
       propertyPath: m_RootOrder
-      value: 13
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 100002, guid: 76c199c1d161bd54aa705fd225a5fac7, type: 2}
+      propertyPath: m_Name
+      value: Eddy
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 76c199c1d161bd54aa705fd225a5fac7, type: 2}
@@ -1659,7 +1679,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 14
+  m_RootOrder: 13
 --- !u!61 &1799652445
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1676,15 +1696,15 @@ Prefab:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    m_TransformParent: {fileID: 0}
+    m_TransformParent: {fileID: 2109677104}
     m_Modifications:
     - target: {fileID: 400002, guid: 76c199c1d161bd54aa705fd225a5fac7, type: 2}
       propertyPath: m_LocalPosition.x
-      value: -.951437712
+      value: -2.86044931
       objectReference: {fileID: 0}
     - target: {fileID: 400002, guid: 76c199c1d161bd54aa705fd225a5fac7, type: 2}
       propertyPath: m_LocalPosition.y
-      value: -4.09443331
+      value: -3.66337872
       objectReference: {fileID: 0}
     - target: {fileID: 400002, guid: 76c199c1d161bd54aa705fd225a5fac7, type: 2}
       propertyPath: m_LocalPosition.z
@@ -1712,7 +1732,11 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400002, guid: 76c199c1d161bd54aa705fd225a5fac7, type: 2}
       propertyPath: m_RootOrder
-      value: 19
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 100002, guid: 76c199c1d161bd54aa705fd225a5fac7, type: 2}
+      propertyPath: m_Name
+      value: Frank
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 76c199c1d161bd54aa705fd225a5fac7, type: 2}
@@ -1772,7 +1796,7 @@ GameObject:
   - 50: {fileID: 1902748925}
   - 58: {fileID: 1902748924}
   m_Layer: 12
-  m_Name: ZombieTest
+  m_Name: Annie
   m_TagString: ZombieFromHorde
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1852,12 +1876,12 @@ Transform:
   m_PrefabInternal: {fileID: 665977717}
   m_GameObject: {fileID: 1902748923}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 3.20196128, y: -4.03634357, z: 0}
+  m_LocalPosition: {x: 1.29294956, y: -3.60528898, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 683690365}
-  m_Father: {fileID: 0}
-  m_RootOrder: 18
+  m_Father: {fileID: 2109677104}
+  m_RootOrder: 0
 --- !u!1 &1923119692
 GameObject:
   m_ObjectHideFlags: 0
@@ -1871,7 +1895,7 @@ GameObject:
   - 50: {fileID: 1923119694}
   - 58: {fileID: 1923119693}
   m_Layer: 12
-  m_Name: ZombieTest
+  m_Name: Eddy
   m_TagString: ZombieFromHorde
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1947,12 +1971,12 @@ Transform:
   m_PrefabInternal: {fileID: 1615419027}
   m_GameObject: {fileID: 1923119692}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -.19627437, y: -4.09443331, z: 0}
+  m_LocalPosition: {x: -2.10528612, y: -3.66337872, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 583918755}
-  m_Father: {fileID: 0}
-  m_RootOrder: 13
+  m_Father: {fileID: 2109677104}
+  m_RootOrder: 4
 --- !u!1 &2005098502
 GameObject:
   m_ObjectHideFlags: 0
@@ -2093,7 +2117,7 @@ GameObject:
   - 50: {fileID: 2032097811}
   - 58: {fileID: 2032097810}
   m_Layer: 12
-  m_Name: ZombieTest
+  m_Name: Diana
   m_TagString: ZombieFromHorde
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2106,12 +2130,12 @@ Transform:
   m_PrefabInternal: {fileID: 1130828259}
   m_GameObject: {fileID: 2032097808}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: .704112649, y: -4.0653882, z: 0}
+  m_LocalPosition: {x: -1.20489907, y: -3.63433361, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1371501774}
-  m_Father: {fileID: 0}
-  m_RootOrder: 15
+  m_Father: {fileID: 2109677104}
+  m_RootOrder: 3
 --- !u!58 &2032097810
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -2246,3 +2270,36 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1177926152}
   m_RootOrder: 0
+--- !u!1 &2109677103
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 2109677104}
+  m_Layer: 0
+  m_Name: Bottom Zombies
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2109677104
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2109677103}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 1.90901172, y: -.431054682, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 1902748928}
+  - {fileID: 1164795967}
+  - {fileID: 49507526}
+  - {fileID: 2032097809}
+  - {fileID: 1923119697}
+  - {fileID: 1360285633}
+  m_Father: {fileID: 0}
+  m_RootOrder: 14
