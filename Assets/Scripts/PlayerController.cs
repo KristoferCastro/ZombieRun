@@ -6,9 +6,9 @@ public class PlayerController : MonoBehaviour {
 
 	public AudioClip running;
 	
-	public float maxSpeed = 20f;
+	public float maxSpeed = 1.5f;
 	public float speed = 0f;
-	public float acceleration = 0.3f;
+	public float acceleration = 0.45f;
 	public float deceleration = 2.5f;
 	//public float decelerationScalar = 1f;
 	
