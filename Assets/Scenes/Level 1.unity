@@ -872,12 +872,12 @@ Transform:
   - {fileID: 514245278}
   - {fileID: 978878784}
   - {fileID: 660642021}
-  - {fileID: 1147817667}
-  - {fileID: 713012362}
-  - {fileID: 459376422}
-  - {fileID: 450552193}
-  - {fileID: 1316709179}
-  - {fileID: 1437659428}
+  - {fileID: 1218959428}
+  - {fileID: 288409309}
+  - {fileID: 504982379}
+  - {fileID: 514245278}
+  - {fileID: 978878784}
+  - {fileID: 660642021}
   m_Father: {fileID: 0}
   m_RootOrder: 9
 --- !u!1 &216237225
@@ -1071,7 +1071,7 @@ Transform:
   - {fileID: 499373343}
   - {fileID: 1875501089}
   m_Father: {fileID: 175764186}
-  m_RootOrder: 1
+  m_RootOrder: 7
 --- !u!50 &288409310
 Rigidbody2D:
   m_ObjectHideFlags: 0
@@ -2130,7 +2130,7 @@ Transform:
   - {fileID: 1249742596}
   - {fileID: 1904978369}
   m_Father: {fileID: 175764186}
-  m_RootOrder: 2
+  m_RootOrder: 8
 --- !u!1 &513580817
 GameObject:
   m_ObjectHideFlags: 0
@@ -2201,7 +2201,7 @@ Transform:
   - {fileID: 1234556953}
   - {fileID: 1497482058}
   m_Father: {fileID: 175764186}
-  m_RootOrder: 3
+  m_RootOrder: 9
 --- !u!50 &514245279
 Rigidbody2D:
   m_ObjectHideFlags: 0
@@ -2772,7 +2772,7 @@ Transform:
   - {fileID: 697888010}
   - {fileID: 934708846}
   m_Father: {fileID: 175764186}
-  m_RootOrder: 5
+  m_RootOrder: 11
 --- !u!50 &660642022
 Rigidbody2D:
   m_ObjectHideFlags: 0
@@ -3828,7 +3828,7 @@ Transform:
   - {fileID: 12320240}
   - {fileID: 1743034024}
   m_Father: {fileID: 175764186}
-  m_RootOrder: 4
+  m_RootOrder: 10
 --- !u!50 &978878785
 Rigidbody2D:
   m_ObjectHideFlags: 0
@@ -4790,7 +4790,7 @@ Transform:
   - {fileID: 1864885588}
   - {fileID: 109705178}
   m_Father: {fileID: 175764186}
-  m_RootOrder: 0
+  m_RootOrder: 6
 --- !u!50 &1218959429
 Rigidbody2D:
   m_ObjectHideFlags: 0
