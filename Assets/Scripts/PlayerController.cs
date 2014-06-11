@@ -158,46 +158,30 @@ public class PlayerController : MonoBehaviour {
 	/// without changing anywhere else.
 	/// </summary>
 	void MapInputToState(){
-		if (Input.GetKey(KeyCode.UpArrow)){
-			
-			if (Input.GetKey (KeyCode.LeftArrow) ){
-				lookingState = Looking.UpLeft;
-			}
-			else if (Input.GetKey (KeyCode.RightArrow)){
-				lookingState = Looking.UpRight;
-			}
-			else{
-				lookingState = Looking.Up;
-			}
+		if (Input.GetKey (KeyCode.UpArrow) && Input.GetKey (KeyCode.LeftArrow)){
+			lookingState = Looking.UpLeft;		
+		}
+		else if (Input.GetKey (KeyCode.UpArrow) && Input.GetKey (KeyCode.RightArrow)){
+			lookingState = Looking.UpRight;	
+		}
+		else if (Input.GetKey (KeyCode.DownArrow) && Input.GetKey (KeyCode.LeftArrow)){
+			lookingState = Looking.DownLeft;		
+		}
+		else if (Input.GetKey (KeyCode.DownArrow) && Input.GetKey (KeyCode.RightArrow)){
+			lookingState = Looking.DownRight;		
+		}
+		else if (Input.GetKey(KeyCode.UpArrow)){
+			lookingState = Looking.Up;
 		}
 		else if (Input.GetKey (KeyCode.DownArrow) ){
-			if (Input.GetKey (KeyCode.LeftArrow) ){
-				lookingState = Looking.DownLeft;
-			}
-			else if (Input.GetKey (KeyCode.RightArrow)){
-				lookingState = Looking.DownRight;
-			}
-			else{
-				lookingState = Looking.Down;
-			}
+			lookingState = Looking.Down;
 		}
-		else if (Input.GetKey (KeyCode.DownArrow)){
-			if (Input.GetKey (KeyCode.LeftArrow) ){
-				lookingState = Looking.DownLeft;				
-			}
-			else if (Input.GetKey (KeyCode.RightArrow)){
-				lookingState = Looking.DownRight;	
-			}
-			
-		}	
 		else if (Input.GetKey (KeyCode.LeftArrow)){
 			lookingState = Looking.Left;		
 		}	
 		else if (Input.GetKey (KeyCode.RightArrow)){
 			lookingState = Looking.Right;				
-		}		
-	}
-	
+		}
+	}	
 }
-
 //balls
