@@ -3,6 +3,10 @@
 --- !u!78 &1
 TagManager:
   tags:
+  - Bus
+  - ZombieFromHorde
+  - PushingZombie
+  - Powerup
   - 
   Builtin Layer 0: Default
   Builtin Layer 1: TransparentFX
@@ -15,9 +19,9 @@ TagManager:
   User Layer 8: Player
   User Layer 9: Background
   User Layer 10: HUD
-  User Layer 11: 
-  User Layer 12: 
-  User Layer 13: 
+  User Layer 11: Bus
+  User Layer 12: ZombieFromHorde
+  User Layer 13: PushingZombie
   User Layer 14: 
   User Layer 15: 
   User Layer 16: 
