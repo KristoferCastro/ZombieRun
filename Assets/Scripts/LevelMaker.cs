@@ -23,20 +23,14 @@ public class LevelMaker : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
 		BoxCollider2D spawnBox = spawnArea.GetComponent<BoxCollider2D>();
-		
-		// get the 4 points that make up the square that is the spawn box
 		minX = spawnArea.transform.position.x - spawnBox.size.x/2;
 		maxX = minX + spawnBox.size.x;
 		minY = spawnArea.transform.position.y - spawnBox.size.y/2;
 		maxY = minY + spawnBox.size.y;
-		
 		while (numberOfBus < MAX_NUMBER_BUS){
 			GameObject clone = (GameObject) Instantiate(bus, RandomBusPosition(), Quaternion.Euler(new Vector3(0, 0, Random.Range(0, 360))));
-			clone.transform.parent = GameObject.Find(GameObjectIDS.LEVEL_MANAGER).transform;
-			// Make sure we are not putting the bus on top of another bus
 			do{
 				clone.transform.position = RandomBusPosition ();
-				
 			} while (AlreadyABusThere(clone));
 
 			numberOfBus++;
@@ -45,7 +39,7 @@ public class LevelMaker : MonoBehaviour {
 
 	bool AlreadyABusThere(GameObject bus){
 		float accuracy = 3; // size of circle
-		return Physics.OverlapSphere (bus.transform.position, accuracy).Length > 0;
+		return Physics.OverlapSphere (bus.transform.position, 3).Length > 0;
 	}
 	
 	Vector3 RandomBusPosition(){

@@ -13,12 +13,6 @@ public class PushingZombie : ZombieAI {
 		speed = 20.0f;
 		FaceDownwards();
 		base.originalRotation = transform.rotation;
-		IgnoreCollisionsWithBus(false);
-	}
-	
-	protected void IgnoreCollisionsWithBus(bool decision){
-		GameObject bus = GameObject.FindGameObjectWithTag(GameObjectIDS.BUS_TAG);
-		Physics2D.IgnoreLayerCollision(gameObject.layer, bus.layer, decision);
 	}
 	
 	void Update(){

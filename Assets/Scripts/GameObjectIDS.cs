@@ -14,9 +14,4 @@ public static class GameObjectIDS{
 	public static string BUS_TAG = "Bus";
 	public static string HORIZONTAL_SPAWNER_START = "HorizontalSpawnStartPosition";
 	public static string HORIZONTAL_SPAWNER_END = "HorizontalSpawnEndPosition";
-	
-	public static string LEVEL_MANAGER = "LevelManager";
-	public static string POWER_UP_MANAGER = "PowerUpManager";
-	public static String POWER_UP_SPEED = "speedpowerup";
-
 }
