@@ -44,6 +44,8 @@ GameObject:
   - 212: {fileID: 21200000}
   - 114: {fileID: 11400004}
   - 50: {fileID: 5000000}
+  - 82: {fileID: 8200000}
+  - 114: {fileID: 11400000}
   m_Layer: 12
   m_Name: ZombieHorde1
   m_TagString: ZombieFromHorde
@@ -131,6 +133,101 @@ PolygonCollider2D:
       - {x: .201866984, y: -.937656283}
       - {x: -.248645186, y: -.925961852}
       - {x: -1.59575737, y: 2.72131395}
+--- !u!82 &8200000
+AudioSource:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100004}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_audioClip: {fileID: 0}
+  m_PlayOnAwake: 0
+  m_Volume: .100000001
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 20
+  Pan2D: 0
+  rolloffMode: 1
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    - time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100004}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 18149746af07f5443b69209498c6e2ca, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sound:
+  - {fileID: 8300000, guid: 798ffa4b6f6c99f43bd5672cc1a6c953, type: 3}
+  - {fileID: 8300000, guid: 652dfbebe15aced45a60ab63f66004ef, type: 3}
+  - {fileID: 8300000, guid: 531bd1f316cb20e4985998574c5834f6, type: 3}
+  - {fileID: 8300000, guid: 8dbc11f16be8fe54490315b0e525ace0, type: 3}
+  - {fileID: 8300000, guid: 18b33dc9e7ee98f428ab431ba2f80cf0, type: 3}
+  - {fileID: 8300000, guid: a65bf83c7307eed4bb24b6a11cadbdbe, type: 3}
+  - {fileID: 8300000, guid: c4cf3cc9c9786064ca380ab83dfc083e, type: 3}
+  - {fileID: 8300000, guid: e00f90599af643f4094098a237d3d5a5, type: 3}
+  - {fileID: 8300000, guid: a8d50a4f5e08b564c90e6da5bc2f19ba, type: 3}
+  - {fileID: 8300000, guid: 51cf3a88d17923b4980ac75a68a65dbb, type: 3}
+  - {fileID: 8300000, guid: febb1aaaf900ed04790a6a9e7bb3c7ed, type: 3}
+  - {fileID: 8300000, guid: aacc54885c7b24a43b953273484e60c2, type: 3}
+  - {fileID: 8300000, guid: 18a6021f4eb015847bbc110018a791c5, type: 3}
+  - {fileID: 8300000, guid: 33440ffb345bc0d4fa8fd1489581ce6b, type: 3}
+  - {fileID: 8300000, guid: eb6e6029f849662409878cb43979b37f, type: 3}
+  - {fileID: 8300000, guid: a7163d457af0ac944ad79ae0297a1ede, type: 3}
+  - {fileID: 8300000, guid: 21388b59372efff4c8a00bc281832387, type: 3}
+  - {fileID: 8300000, guid: f52450fba5985c042851f34f9608a667, type: 3}
+  - {fileID: 8300000, guid: f52450fba5985c042851f34f9608a667, type: 3}
+  - {fileID: 8300000, guid: 8dc6b572d2f55044dad0d7b1919af6fa, type: 3}
+  - {fileID: 8300000, guid: 917e057f1f28fca4e91499b3f65a0e37, type: 3}
+  - {fileID: 8300000, guid: 561d6cf37bdffb34a9c89dd69313665d, type: 3}
+  - {fileID: 8300000, guid: 55befa518a7c4d7478ea7e98dd0d731c, type: 3}
+  - {fileID: 8300000, guid: c4e497924f9dc8040b87fa41fb41972c, type: 3}
+  seconds: 4
 --- !u!114 &11400002
 MonoBehaviour:
   m_ObjectHideFlags: 1
