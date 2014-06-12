@@ -53,7 +53,6 @@ public class PlayerController : MonoBehaviour {
 		Point();
 		
 		UpdateSpeedState();
-		Debug.Log ("I am moving: " + speedState);
 	}
 	
 	void FixedUpdate(){

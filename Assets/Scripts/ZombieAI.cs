@@ -18,11 +18,12 @@ public class ZombieAI : MonoBehaviour {
 	public float speed;
 	public float acceleration = 0.0005f;
 	public bool followPlayerEverywhere = false;
+	public bool following = false;
 	
 	
 	SearchRadar searchRadar;
 	public GameObject player;	
-	PlayerController playerControl;
+	protected PlayerController playerControl;
 	protected Quaternion originalRotation;
 	
 	public float moveForce = 2f;
@@ -63,7 +64,7 @@ public class ZombieAI : MonoBehaviour {
 				
 		if (searchRadar.FoundPlayer || followPlayerEverywhere){
 			LookAt (player);
-			
+			following = true;
 			if (!leaping){
 				leaping = true;
 				LeapAtPlayer();
@@ -71,6 +72,8 @@ public class ZombieAI : MonoBehaviour {
 		}
 		else{
 			ResetZombie();
+			following = false;
+			
 		}
 	}
 	

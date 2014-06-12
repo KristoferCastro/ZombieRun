@@ -221,7 +221,7 @@ BoxCollider2D:
   m_Enabled: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Size: {x: 1.84000003, y: 3.3900001}
+  m_Size: {x: 1.29999995, y: 3.3900001}
   m_Center: {x: 0, y: 0}
 --- !u!212 &16261829
 SpriteRenderer:
@@ -1210,6 +1210,7 @@ MonoBehaviour:
   speed: .949999988
   acceleration: .000500000024
   followPlayerEverywhere: 1
+  following: 0
   player: {fileID: 1462744273}
   moveForce: 2
   leapForce: 50
@@ -1526,7 +1527,7 @@ BoxCollider2D:
   m_Enabled: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Size: {x: 1.84000003, y: 3.3900001}
+  m_Size: {x: 1.29999995, y: 3.3900001}
   m_Center: {x: 0, y: 0}
 --- !u!212 &356577484
 SpriteRenderer:
@@ -2029,6 +2030,7 @@ MonoBehaviour:
   speed: .949999988
   acceleration: .000500000024
   followPlayerEverywhere: 1
+  following: 0
   player: {fileID: 1462744273}
   moveForce: 2
   leapForce: 50
@@ -2217,6 +2219,7 @@ MonoBehaviour:
   speed: .949999988
   acceleration: .000500000024
   followPlayerEverywhere: 1
+  following: 0
   player: {fileID: 1462744273}
   moveForce: 2
   leapForce: 50
@@ -2559,6 +2562,7 @@ MonoBehaviour:
   speed: .949999988
   acceleration: .000500000024
   followPlayerEverywhere: 1
+  following: 0
   player: {fileID: 1462744273}
   moveForce: 2
   leapForce: 50
@@ -2864,6 +2868,7 @@ MonoBehaviour:
   speed: .949999988
   acceleration: .000500000024
   followPlayerEverywhere: 1
+  following: 0
   player: {fileID: 1462744273}
   moveForce: 2
   leapForce: 50
@@ -3505,6 +3510,7 @@ MonoBehaviour:
   speed: .949999988
   acceleration: .000500000024
   followPlayerEverywhere: 1
+  following: 0
   player: {fileID: 1462744273}
   moveForce: 2
   leapForce: 50
@@ -3828,6 +3834,7 @@ MonoBehaviour:
   speed: .949999988
   acceleration: .000500000024
   followPlayerEverywhere: 1
+  following: 0
   player: {fileID: 1462744273}
   moveForce: 2
   leapForce: 50
@@ -4261,7 +4268,7 @@ BoxCollider2D:
   m_Enabled: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Size: {x: 2.36999989, y: 4.86000013}
+  m_Size: {x: 1.79999995, y: 4.30000019}
   m_Center: {x: 0, y: 0}
 --- !u!212 &772163636
 SpriteRenderer:
@@ -4817,6 +4824,7 @@ MonoBehaviour:
   speed: .949999988
   acceleration: .000500000024
   followPlayerEverywhere: 1
+  following: 0
   player: {fileID: 1462744273}
   moveForce: 2
   leapForce: 50
@@ -5677,6 +5685,7 @@ MonoBehaviour:
   speed: .949999988
   acceleration: .000500000024
   followPlayerEverywhere: 1
+  following: 0
   player: {fileID: 1462744273}
   moveForce: 2
   leapForce: 50
@@ -6103,6 +6112,7 @@ MonoBehaviour:
   speed: .949999988
   acceleration: .000500000024
   followPlayerEverywhere: 1
+  following: 0
   player: {fileID: 1462744273}
   moveForce: 2
   leapForce: 50
@@ -6350,7 +6360,7 @@ BoxCollider2D:
   m_Enabled: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Size: {x: 1.84000003, y: 3.3900001}
+  m_Size: {x: 1.29999995, y: 3.3900001}
   m_Center: {x: 0, y: 0}
 --- !u!212 &1242787439
 SpriteRenderer:
@@ -6578,6 +6588,7 @@ MonoBehaviour:
   speed: .949999988
   acceleration: .000500000024
   followPlayerEverywhere: 1
+  following: 0
   player: {fileID: 1462744273}
   moveForce: 2
   leapForce: 50
@@ -6880,6 +6891,7 @@ MonoBehaviour:
   speed: .949999988
   acceleration: .000500000024
   followPlayerEverywhere: 1
+  following: 0
   player: {fileID: 1462744273}
   moveForce: 2
   leapForce: 50

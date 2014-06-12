@@ -18,7 +18,7 @@ public class LevelMaker : MonoBehaviour {
 	float maxY;
 	
 	
-	readonly int MAX_NUMBER_BUS = 10;
+	readonly int MAX_NUMBER_BUS = 25;
 	int numberOfBus = 0;
 	
 	// Use this for initialization
@@ -41,7 +41,7 @@ public class LevelMaker : MonoBehaviour {
 	}
 
 	bool AlreadyABusThere(GameObject clone){
-		float accuracy = 5; // size of circle
+		float accuracy = 7; // size of circle
 		return Physics.OverlapSphere (bus.transform.position, accuracy).Length > 0;
 	}
 	

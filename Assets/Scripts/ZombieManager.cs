@@ -27,7 +27,7 @@ public class ZombieManager : MonoBehaviour {
 	
 	// Use this for initialization
 	void Start () {
-		InvokeRepeating ("SpawnZombieTopOnly", 1f, 2.5f);
+		InvokeRepeating ("SpawnZombieTopOnly", 1f, 2.0f);
 		
 		spawnRadius = gameObject.GetComponent<CircleCollider2D>().radius;
 		transform.position = new Vector3(player.transform.position.x 
