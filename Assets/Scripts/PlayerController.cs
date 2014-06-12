@@ -3,6 +3,7 @@ using System.Collections;
 
 public class PlayerController : MonoBehaviour {
 
+	public static readonly float ABSOLUTE_MAX_SPEED = 4f;
 
 	public AudioClip running;
 	
@@ -14,12 +15,30 @@ public class PlayerController : MonoBehaviour {
 	
 	enum Looking : byte {Up = 0, Down, Left, Right, UpLeft, UpRight, DownLeft, DownRight}
 	
+	// for example: anything below 0.5 speed is Very Slow,
+	public static float IDLE = 0f;
+	public static float VERY_SLOW = 0.5f;
+	public static float SLOW = 1.25f;
+	public static float MODERATE = 2.0f;
+	public static float FAST = 2.5f;
+	public static float VERY_FAST = ABSOLUTE_MAX_SPEED;
+	
+	float speedState;
+	
 	Looking previousLookingState;
 	Looking lookingState;
 	char lastKey;
 	
 	Quaternion originalRotation;
-		
+	
+	void UpdateSpeedState(){
+		if ( speed <= IDLE ) speedState = IDLE;
+		else if ( speed <= VERY_SLOW) speedState = VERY_SLOW;
+		else if ( speed <= SLOW) speedState = SLOW;
+		else if ( speed <= MODERATE) speedState = MODERATE;
+		else if ( speed <= FAST) speedState = FAST;
+		else if ( speed <= VERY_FAST ) speedState = VERY_FAST;
+	}	
 	
 	// Use this for initialization
 	void Start () {
@@ -32,6 +51,9 @@ public class PlayerController : MonoBehaviour {
 		MapInputToState();
 		Move();	
 		Point();
+		
+		UpdateSpeedState();
+		Debug.Log ("I am moving: " + speedState);
 	}
 	
 	void FixedUpdate(){
@@ -42,10 +64,11 @@ public class PlayerController : MonoBehaviour {
 	/// </summary>
 	void Move(){
 		//Debug.Log ("Speed: " + speed);
-				
+			
+	
 		if (Input.GetKeyDown("a")){
 			// if succesfully alternating, speed up
-			if ( lastKey == 'd' && speed <= maxSpeed){
+			if ( lastKey == 'd' && speed <= maxSpeed && speed <= ABSOLUTE_MAX_SPEED){
 				speed += acceleration;
 			}
 			lastKey = 'a';
@@ -53,12 +76,14 @@ public class PlayerController : MonoBehaviour {
 		}
 		
 		else if (Input.GetKeyDown ("d")){
-			if ( lastKey == 'a' && speed <= maxSpeed){
+			if ( lastKey == 'a' && speed <= maxSpeed && speed <= ABSOLUTE_MAX_SPEED){
 				speed += acceleration;
 			}
 			lastKey = 'd';
 		}
 			
+		if (speed > maxSpeed ) speed = maxSpeed;
+		
 		if ( speed <= 0 )
 			speed = 0;
 		else
