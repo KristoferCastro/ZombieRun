@@ -43,7 +43,7 @@ public class PushingZombie : ZombieAI {
 			
 			if (color.a <= 0){
 				Destroy (gameObject);
-				GameObject.Find(GameObjectIDS.PLAYER).GetComponent<PlayerController>().enabled = true;
+				//GameObject.Find(GameObjectIDS.PLAYER).GetComponent<PlayerController>().enabled = true;
 			}
 		}
 	}
@@ -73,7 +73,7 @@ public class PushingZombie : ZombieAI {
 		}
 		
 		if (other.gameObject.tag == GameObjectIDS.ZOMBIE_FROM_HORDE_TAG){
-			fading = true;
+			//fading = true;
 		}
 	}
 	
