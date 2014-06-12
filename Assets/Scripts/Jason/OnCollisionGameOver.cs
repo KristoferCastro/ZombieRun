@@ -11,7 +11,7 @@ public class OnCollisionGameOver : MonoBehaviour {
 	
 	void OnTriggerEnter2D(Collider2D other)
 	{
-		if (other.gameObject.tag == tag && !fade){
+		if (other.gameObject.tag == tag && !fading){
 			StartCoroutine(Death()); 
 		}
 	}
