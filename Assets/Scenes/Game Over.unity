@@ -90,7 +90,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!131 &253763776
 GUITexture:
   m_ObjectHideFlags: 0
@@ -292,6 +292,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b8d0a62b1f39d954d93cfb2035dd4fd8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  blankImage: {fileID: 0}
   level: Title Page
 --- !u!1 &1119088911
 GameObject:
