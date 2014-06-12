@@ -4,11 +4,12 @@ using System.Collections;
 public class SpeedPowerup : MonoBehaviour {
 
 	public string tag = "Player";
+	public float seconds = 8;
 	float maxSpeedIncrease = 0.35f;
 	
 	// Use this for initialization
 	void Start () {
-		DeleteAfter (7);
+		DeleteAfter (seconds);
 		
 		// just in case I didn't hook up player in the UI
 		//if (player == null)
