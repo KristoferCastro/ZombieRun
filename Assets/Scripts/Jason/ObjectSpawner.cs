@@ -5,7 +5,8 @@ using System.Collections;
 /// This class is responsible for spawning/firing off obstacles 
 /// </summary>
 public class ObjectSpawner : MonoBehaviour {
-	
+
+	public GameObject parentobj;
 	public GameObject obj;
 	public GameObject player;
 	public float spawnerLocationX = 0;
@@ -65,8 +66,9 @@ public class ObjectSpawner : MonoBehaviour {
 	}
 
 	void SpawnObjectTopOnly(){
-		Instantiate(obj,new Vector3(Random.Range(spawnerStart.transform.position.x, spawnerEnd.transform.position.x),
+		GameObject newobj = (GameObject)Instantiate(obj,new Vector3(Random.Range(spawnerStart.transform.position.x, spawnerEnd.transform.position.x),
 		                       		transform.position.y, 0), Quaternion.identity);
+		newobj.transform.parent = parentobj.transform; 
 	}
 	
 	/// <summary>
