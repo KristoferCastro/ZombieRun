@@ -11,15 +11,15 @@ public class OnCollisionGameOver : MonoBehaviour {
 	void OnTriggerEnter2D(Collider2D other)
 	{
 		if (other.gameObject.tag == tag){
-			player.GetComponent<PlayerController>().enabled = false;
-			player.audio.Play();
-			GameObject.Find("ProgressHUD").SetActive(false);
-			fade.SetActive(true);
 			StartCoroutine(Death()); 
 		}
 	}
 
 	IEnumerator Death(){
+		player.audio.Play();
+		player.GetComponent<PlayerController>().enabled = false;
+		GameObject.Find("ProgressHUD").SetActive(false);
+		fade.SetActive(true);
 		yield return new WaitForSeconds (3f);
 		Application.LoadLevel(level);
 	}
