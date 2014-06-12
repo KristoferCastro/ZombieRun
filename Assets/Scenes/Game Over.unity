@@ -179,6 +179,7 @@ GameObject:
   - 81: {fileID: 576217922}
   - 82: {fileID: 576217927}
   - 114: {fileID: 576217928}
+  - 114: {fileID: 576217929}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -323,6 +324,18 @@ MonoBehaviour:
   blankImage: {fileID: 253763775}
   level: Title Page
   on: 1
+  fadeMusic: 1
+--- !u!114 &576217929
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 576217921}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a3d8f0f59456a5c4183066f88f22ae24, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1184954079
 GameObject:
   m_ObjectHideFlags: 0
