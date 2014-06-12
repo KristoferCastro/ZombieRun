@@ -113,11 +113,11 @@ public class ZombieAI : MonoBehaviour {
 		}else if (playerControl.speedState == PlayerController.VERY_SLOW){
 			speed += 0.0001f;
 		}else if (playerControl.speedState == PlayerController.MODERATE){
-			speed += 0.0005f;
-		}else if (playerControl.speedState == PlayerController.FAST){
 			speed += 0.0009f;
+		}else if (playerControl.speedState == PlayerController.FAST){
+			speed += 0.0020f;
 		}else if (playerControl.speedState == PlayerController.VERY_FAST){
-			speed += 0.001f;	
+			speed += 0.0045f;	
 		}
 	}
 }
