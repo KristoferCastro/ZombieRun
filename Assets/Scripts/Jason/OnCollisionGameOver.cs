@@ -22,7 +22,7 @@ public class OnCollisionGameOver : MonoBehaviour {
 		player.audio.Play();
 		player.GetComponent<PlayerController>().enabled = false;
 		GameObject.Find("ProgressHUD").SetActive(false);
-		yield return new WaitForSeconds (3f);
+		yield return new WaitForSeconds (4f);
 		Application.LoadLevel(level);
 	}
 }
