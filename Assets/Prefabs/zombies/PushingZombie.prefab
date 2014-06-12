@@ -186,6 +186,7 @@ MonoBehaviour:
   speed: .5
   acceleration: .000500000024
   followPlayerEverywhere: 0
+  following: 0
   player: {fileID: 0}
   moveForce: 10
   leapForce: 100
@@ -210,7 +211,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingOrder: 1
   m_Sprite: {fileID: 21300000, guid: 597384886e5911a4ea6a85654d2d21f7, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: .819093645, g: .392517328, b: .970588207, a: .545098066}
 --- !u!1001 &100100000
 Prefab:
   m_ObjectHideFlags: 1
