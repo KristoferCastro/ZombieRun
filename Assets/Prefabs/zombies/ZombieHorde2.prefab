@@ -155,6 +155,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: .949999988
   acceleration: .000500000024
+  followPlayerEverywhere: 1
   player: {fileID: 0}
   moveForce: 2
   leapForce: 50

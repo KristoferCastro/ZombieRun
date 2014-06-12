@@ -31,7 +31,7 @@ GameObject:
   - 58: {fileID: 5800000}
   - 82: {fileID: 8200000}
   m_Layer: 13
-  m_Name: PushingZombieTest
+  m_Name: PushingZombie
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
