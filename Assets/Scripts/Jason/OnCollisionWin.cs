@@ -35,6 +35,7 @@ public class OnCollisionWin : MonoBehaviour {
 			mainCamera.audio.volume = mainCamera.audio.volume - mainCamera.audio.volume * 0.3f;
 			yield return new WaitForSeconds (0.35f);
 		}
+		yield return new WaitForSeconds (2f);
 		player.GetComponent<PlayerController>().enabled = false;
 		winSplat.SetActive(true);
 
