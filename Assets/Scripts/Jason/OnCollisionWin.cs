@@ -23,11 +23,12 @@ public class OnCollisionWin : MonoBehaviour {
 		//player.audio.Play();
 		spawners.SetActive(false);
 
-		player.GetComponent<PlayerController>().enabled = false;
+
 		player.animation.Play();
+		player.GetComponent<PlayerController>().enabled = false;
 		GameObject.Find("ProgressHUD").SetActive(false);
 
 		yield return new WaitForSeconds (5f);
-		Application.LoadLevel(level);
+		//Application.LoadLevel(level);
 	}
 }
