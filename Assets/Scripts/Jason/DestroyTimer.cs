@@ -2,14 +2,9 @@
 using System.Collections;
 
 public class DestroyTimer : MonoBehaviour {
-
+	public float seconds = 10;
 	// Use this for initialization
 	void Start () {
-	
-	}
-	
-	// Update is called once per frame
-	void Update () {
-	
+		Destroy(this.gameObject, seconds);
 	}
 }
