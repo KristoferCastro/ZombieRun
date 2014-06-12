@@ -21,7 +21,7 @@ TagManager:
   User Layer 11: Obstacle
   User Layer 12: ZombieFromHorde
   User Layer 13: PushingZombie
-  User Layer 14: 
+  User Layer 14: Splat
   User Layer 15: 
   User Layer 16: 
   User Layer 17: 
@@ -51,4 +51,8 @@ TagManager:
   - name: Player
     userID: 1
     uniqueID: 1917754215
+    locked: 0
+  - name: Splat
+    userID: 3
+    uniqueID: 4199050127
     locked: 0

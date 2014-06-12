@@ -7,7 +7,7 @@ public class OnCollisionWin : MonoBehaviour {
 	public GameObject topWall;
 	public GameObject mainCamera;
 	public GameObject victoryCamera;
-	public GameObject fade;
+	public GameObject winSplat;
 	public string tag = "Player";
 	public string level = "Scene Name";
 	bool winning = false;
@@ -21,8 +21,6 @@ public class OnCollisionWin : MonoBehaviour {
 	
 	IEnumerator Win(){
 		winning = true;
-		//fade.SetActive(true);
-		//player.audio.Play();
 
 		player.animation.Play();
 		player.GetComponent<PlayerController>().enabled = false;
@@ -31,11 +29,11 @@ public class OnCollisionWin : MonoBehaviour {
 		mainCamera.GetComponent<Camera>().enabled = false;
 		victoryCamera.GetComponent<Camera>().enabled = true;
 		victoryCamera.animation.Play();
+		victoryCamera.audio.Play();
 
 		yield return new WaitForSeconds (5f);
 		player.GetComponent<PlayerController>().enabled = false;
-
-		yield return new WaitForSeconds (8f);
+		winSplat.SetActive(true);
 
 		//Application.LoadLevel(level);
 	}
