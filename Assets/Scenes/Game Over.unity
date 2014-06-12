@@ -292,7 +292,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b8d0a62b1f39d954d93cfb2035dd4fd8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  blankImage: {fileID: 0}
+  blankImage: {fileID: 253763775}
   level: Title Page
 --- !u!1 &1119088911
 GameObject:
