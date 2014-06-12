@@ -10,15 +10,13 @@ public class LevelMaker : MonoBehaviour {
 	public GameObject bus;
 	public GameObject[] vehicles;
 	public GameObject spawnArea;
-	
+	public int MAX_NUMBER_BUS = 20;
 	
 	float minX;
 	float maxX;
 	float minY;
 	float maxY;
-	
-	
-	readonly int MAX_NUMBER_BUS = 25;
+
 	int numberOfBus = 0;
 	
 	// Use this for initialization

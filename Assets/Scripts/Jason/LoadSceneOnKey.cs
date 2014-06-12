@@ -18,7 +18,7 @@ public class LoadSceneOnKey : MonoBehaviour {
 	IEnumerator FadeMusicLoadLevel(){
 		for (float i = 9; i > 0; i--){
 			audio.volume = audio.volume - audio.volume * 0.3f;
-			yield return new WaitForSeconds (0.5f);
+			yield return new WaitForSeconds (0.35f);
 		}
 		Application.LoadLevel(level);
 	}
