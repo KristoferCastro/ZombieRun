@@ -6,6 +6,7 @@ public class ProgressHUD : MonoBehaviour {
 	public Transform startPoint;
 	public Transform endPoint;
 	public Transform playerIcon;
+	public Transform zombieIcon;
 	
 	float totalDistance; // of progress bar
 	
@@ -32,5 +33,8 @@ public class ProgressHUD : MonoBehaviour {
 	void Update () {	
 		playerIcon.position = new Vector3(playerIcon.position.x, startPoint.position.y + totalDistance*progressScript.progress/100,
 		                                  playerIcon.position.z);
+		                                  
+		zombieIcon.position = new Vector3(zombieIcon.position.x, startPoint.position.y + totalDistance*progressScript.zombieHordeProgress/100,
+		zombieIcon.position.z);
 	}
 }

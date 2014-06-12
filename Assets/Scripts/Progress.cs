@@ -6,9 +6,11 @@ public class Progress : MonoBehaviour {
 	public Transform startPoint;
 	public Transform endPoint;
 	public Transform player;
-	public GameObject[] zombieHorde;
+	public Transform zombieHorde;
 	
 	public float progress = 0f;
+	
+	public float zombieHordeProgress = 0f;
 	float totalDistance;
 	
 	// Use this for initialization
@@ -32,6 +34,7 @@ public class Progress : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 		calculateProgress();
+		calculateZombieProgress();
 		//Debug.Log ("Player progress: " + progress + "%");
 	}
 	
@@ -39,4 +42,11 @@ public class Progress : MonoBehaviour {
 		float distanceFromStart = player.position.y - startPoint.position.y;
 		progress = distanceFromStart/totalDistance * 100; 
 	}
+	
+	void calculateZombieProgress(){
+		float distanceFromStart = zombieHorde.position.y - startPoint.position.y;
+		zombieHordeProgress = distanceFromStart/totalDistance*100;
+	}
+	
+	
 }
