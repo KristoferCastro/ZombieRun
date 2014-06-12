@@ -14,6 +14,7 @@ public class OnCollisionWin : MonoBehaviour {
 	
 	void OnTriggerEnter2D(Collider2D other)
 	{
+		mainCamera.GetComponent<LoadSceneOnKey>().on = true;
 		if (other.gameObject.tag == tag && !winning){
 			StartCoroutine(Win()); 
 		}
@@ -34,6 +35,7 @@ public class OnCollisionWin : MonoBehaviour {
 		yield return new WaitForSeconds (5f);
 		player.GetComponent<PlayerController>().enabled = false;
 		winSplat.SetActive(true);
+
 
 		//Application.LoadLevel(level);
 	}

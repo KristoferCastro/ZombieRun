@@ -5,10 +5,11 @@ public class LoadSceneOnKey : MonoBehaviour {
 
 	public GameObject blankImage;
 	public string level = "Scene Name"; 
+	public bool on = true;
 	bool fading = false;
 
 	void Update () {
-		if(Input.GetKeyDown("space") && !fading){
+		if(Input.GetKeyDown("space") && !fading && on){
 			fading = true;
 			blankImage.SetActive(true);
 			StartCoroutine(FadeMusicLoadLevel()); 
