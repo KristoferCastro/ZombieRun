@@ -11,7 +11,6 @@ public class OnCollisionLoadLevel : MonoBehaviour {
 		if (other.gameObject.tag == tag){
 			// make it so it collides with player again!
 			gameObject.collider2D.isTrigger = false;
-			Debug.Log ("hitting the player son!");
 			// do stuff when collided
 			Application.LoadLevel(level);
 		}
