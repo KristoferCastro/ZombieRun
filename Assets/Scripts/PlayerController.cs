@@ -23,7 +23,7 @@ public class PlayerController : MonoBehaviour {
 	public static float FAST = 2.5f;
 	public static float VERY_FAST = ABSOLUTE_MAX_SPEED;
 	
-	float speedState;
+	public float speedState;
 	
 	Looking previousLookingState;
 	Looking lookingState;

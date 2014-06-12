@@ -14,13 +14,15 @@ using System.Collections;
 /// </summary>
 public class ZombieAI : MonoBehaviour {
 
-	public float speed = 0.95f;
+	readonly float BASE_SPEED = 1f;
+	public float speed;
 	public float acceleration = 0.0005f;
 	public bool followPlayerEverywhere = false;
 	
 	
 	SearchRadar searchRadar;
 	public GameObject player;	
+	PlayerController playerControl;
 	protected Quaternion originalRotation;
 	
 	public float moveForce = 2f;
@@ -31,9 +33,8 @@ public class ZombieAI : MonoBehaviour {
 	bool leaping;
 	
 	protected void Start () {
-		
-		InitializeVariables();
 		InitializeReferences();
+		InitializeVariables();
 		originalRotation = transform.rotation;
 		IgnoreCollisionsWithBus(true);
 	}
@@ -47,6 +48,7 @@ public class ZombieAI : MonoBehaviour {
 	void InitializeVariables(){
 		originalRotation = transform.rotation;
 		leaping = false;
+		playerControl = player.GetComponent<PlayerController>();
 	}
 	
 	void InitializeReferences(){
@@ -73,6 +75,7 @@ public class ZombieAI : MonoBehaviour {
 	}
 	
 	protected void FixedUpdate(){
+		ChangeSpeedBasedOnPlayer();
 		rigidbody2D.AddRelativeForce(Vector3.up*speed);
 	}
 	
@@ -95,5 +98,23 @@ public class ZombieAI : MonoBehaviour {
 		Vector3 diff = target.transform.position - gameObject.transform.position;
 		float rot_z = Mathf.Atan2 (diff.x, diff.y) * Mathf.Rad2Deg;
 		transform.rotation = Quaternion.Euler (0f,0f, -rot_z);
+	}
+	
+	void ChangeSpeedBasedOnPlayer(){
+		
+		if (playerControl.speedState == PlayerController.IDLE){
+			if (speed < BASE_SPEED )
+				speed = BASE_SPEED;
+			else 
+				speed -= 0.00085f;
+		}else if (playerControl.speedState == PlayerController.VERY_SLOW){
+			speed += 0.0001f;
+		}else if (playerControl.speedState == PlayerController.MODERATE){
+			speed += 0.0005f;
+		}else if (playerControl.speedState == PlayerController.FAST){
+			speed += 0.0009f;
+		}else if (playerControl.speedState == PlayerController.VERY_FAST){
+			speed += 0.001f;	
+		}
 	}
 }

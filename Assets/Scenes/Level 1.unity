@@ -7152,6 +7152,7 @@ MonoBehaviour:
   speed: 0
   acceleration: .449999988
   deceleration: 2.5
+  speedState: 0
 --- !u!58 &1462744278
 CircleCollider2D:
   m_ObjectHideFlags: 0
